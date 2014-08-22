@@ -1,0 +1,26 @@
+            <h3 class="f14"><span class="switchs cu on" title="统计系统"></span>统计系统</h3>
+            <ul>
+               <volist name="data1" id="v2">
+                <li id="_MP{$v2.id}" class="sub_menu">
+                                   <a href="javascript:_MP('{$v2.id}','./index.php?m=Statistical&a={$v2.module_alias}');" hidefocus="true" style="outline:none;">{$v2.category}</a></li>
+                </volist>
+                <volist name="data" id="vo">
+                 <li id="_MP{$vo.access_id}" class="sub_menu">
+                	<a href="javascript:_MP('{$vo.access_id}','./index.php?m={$vo.parent_module}&a={$vo.access_name}');" hidefocus="true" style="outline:none;">{$vo.module}</a></li>
+               </volist>
+             </ul>
+			<script type="text/javascript">
+            $(".switchs").each(function(i){
+                var ul = $(this).parent().next();
+                $(this).click(
+                function(){
+                    if(ul.is(':visible')){
+                        ul.hide();
+                        $(this).removeClass('on');
+                            }else{
+                        ul.show();
+                        $(this).addClass('on');
+                    }
+                })
+            });
+            </script>

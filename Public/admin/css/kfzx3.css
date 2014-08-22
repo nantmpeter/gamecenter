@@ -1,0 +1,23 @@
+@charset "gb2312";
+/* CSS Document */
+#content_3{ width:991px;margin-bottom:20px; padding-bottom:59px; float:left;}
+#fcm_2{ width:971px; padding:4px 9px 0 9px;}
+#fcm_2_left{ width:238px; height:511px; line-height:26px; float:left; border:1px solid #cacaca;background:url(../images/index_39.jpg) no-repeat 9px 38px;}
+#fcm_2_left dt{ width:228px; height:28px; font-size:14px; font-weight:bold; padding-left:8px; border:1px solid #fff; background:#ececec;}
+#fcm_2_left dd{ width:205px; height:34px; line-height:34px; padding-left:32px;font-weight:bold; border-top:1px solid #e1e1e1; }
+#fcm_2_left dd a{ color:#333;}
+#fcm_2_left dd a:hover{ color:#f5990a;}
+
+#fcm_2_right{ width:715px; height:501px; float:right; border:1px solid #e0e0e0; line-height:28px; padding:10px 0 0 10px;}
+#fcm_2_right select{ width:107px; height:20px; border:1px solid #ccc; float:left;margin-right:10px;}
+#fcm_2_right label{ float:left;}
+#fcm_2_right input{ width:155px; height:20px; border:1px solid #ccc; float:left; margin-right:10px;}
+#fcm_2_right span input{ width:74px; height:24px; border:none; float:left;}
+
+.soso{width:686px; height:25px; line-height:25px; display:inline-block;padding:14px 0 14px 14px;border:1px solid #ccc;}
+#right_2{ width:686px;height:auto !important;£¨Õë¶ÔIE7 IE78 »ðºü£© height:430px; _height:430px; min-height:430px; padding:14px 0 0 14px;}
+#right_2 li{ width:672px; line-height:26px; border-bottom:1px dashed #ccc; float:left;}
+#right_2 li a{ margin-left:4px; float:left;}
+#right_2 li span{ float:right; margin-right:4px;}
+
+.page{ display:block; float:left; width:400px; height:25px; line-height:25px; padding-left:5px;}

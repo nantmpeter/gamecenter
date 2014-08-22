@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>31wan - 后台管理中心</title>
+<link href="__PUBLIC__/admin/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/zh-cn-system.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/table_form.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles1.css" title="styles1" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles2.css" title="styles2" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles3.css" title="styles3" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles4.css" title="styles4" media="screen">
+<script language="javascript" type="text/javascript" src="__PUBLIC__/admin/js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="__PUBLIC__/admin/js/admin_common.js"></script>
+<script language="javascript" type="text/javascript" src="__PUBLIC__/admin/js/styleswitch.js"></script>
+<script src="__PUBLIC__/js/dialog/plugins/iframeTools.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/calendar/jscal2.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/calendar/border-radius.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/calendar/win2k.css">
+<script type="text/javascript" src="__PUBLIC__/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/calendar/lang/en.js"></script>
+<script language="javascript" type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style>
+<script>
+</script>
+
+<div class="pad-10">
+<div class="col-tab">
+
+<div id="div_setting_1" class="contentList pad-10" style="">
+<form action="{:U('Channel/add_cps')}" method="post" id="myform">
+<table width="100%" class="table_form">
+  <tbody>
+ <tr>
+    <th width="120">cps用户名：</th>
+    <td class="y-bg"><input type="text" class="input-text" name="username" id="username" size="30" >&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">用户名</font></td>
+  </tr>
+
+   <tr>
+    <th width="120">密码：</th>
+    <td class="y-bg"><input type="password" class="input-text" name="password" id="password" size="30" >&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">密码</font></td>
+  </tr>
+   <tr>
+    <th width="120">email：</th>
+    <td class="y-bg"><input type="text" class="input-text" name="email" id="email" size="30" >&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">邮箱</font></td>
+  </tr>
+     <tr>
+    <th width="120">手机：</th>
+    <td class="y-bg"><input type="text" class="input-text" name="phone" id="phone" size="30" >&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">手机号码</font></td>
+  </tr>
+    <tr>
+    <th width="120">cps推广标示：</th>
+    <td class="y-bg"><input type="text" class="input-text" name="nickname" id="nickname" size="30" >&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">推广链接中的标示</font></td>
+  </tr>
+</tbody></table>
+</div>
+<div class="bk15"></div>
+<input name="dosubmit" type="submit" value="提交" class="button">
+</form>
+</div>
+
+<script language="javascript">
+sch=new Array();
+<volist name="game_list" id="vo" key="k" >
+	       sch[{$k}]=new Array("{$vo.gamename}","{$vo.gid}");
+</volist>
+	
+//var schcount=1;
+lm=new Array();
+<volist name="server_list" id="vo" key="k" >
+lm[{$k}]=new Array("{$vo.sid}","{$vo.servername}","{$vo.gid}");
+</volist>
+
+var lmcount={$num};
+
+function changepro(city,pro)
+{
+var pro_v=document.getElementById(pro).value;
+
+var i;
+document.getElementById(city).options.length=1;
+	for (i=1;i<=lmcount;i++){
+		
+		if (lm[i][2]==pro_v){ 
+		document.getElementById(city).options.add(new Option(lm[i][1],lm[i][0])); 
+		}        
+	}
+
+}
+
+</script>  
+
+</body></html>

@@ -1,0 +1,28 @@
+@charset "gb2312";
+/* CSS Document */
+#content_3{ width:991px;margin-bottom:20px; padding-bottom:59px; float:left;}
+#fcm_2{ width:971px; padding:4px 9px 0 9px;}
+#fcm_2_left{ width:238px; height:511px;  line-height:26px; float:left; border:1px solid #cacaca;background:url(../images/index_39.jpg) no-repeat 9px 38px;}
+#fcm_2_left dt{ width:228px; height:28px; font-size:14px; font-weight:bold; padding-left:8px; border:1px solid #fff; background:#ececec;}
+#fcm_2_left dd{ width:205px; height:34px; line-height:34px; padding-left:32px;font-weight:bold; border-top:1px solid #e1e1e1; }
+#fcm_2_left dd a{ color:#333;}
+#fcm_2_left dd a:hover{ color:#f5990a;}
+
+#fcm_2_right{ width:725px; height:511px; float:right; border:1px solid #e0e0e0;background:#f9f9f9;}
+#fcm_2_right_1{ width:701px; height:290px; border-bottom:1px dashed #c6c6c6; padding:0 12px 0 12px;}
+#tw{ width:294px; height:290px; float:left;}
+#tw dt{ width:294px; height:29px; font-size:14px; font-weight:bold; padding-top:64px; background:url(../images/index_45.jpg) no-repeat 81px 20px;}
+#tw dd{ width:274px; padding-left:10px;}
+#tw dd img{ margin-bottom:12px;}
+
+#wh{ width:363px; height:260px; padding-top:30px; float:right;}
+#wh dt{ width:363px; height:17px; float:left;border-bottom:1px dashed #c6c6c6; text-align:center;}
+#wh dd{ width:363px; line-height:24px; float:left;}
+#wh dd span{ float:left;}
+#wh dd a{ margin-left:10px; float:left;}
+#wh dd b{ font-weight:100; float:right;}
+
+#fcm_2_right_2{ width:715px; height:200px; float:left; padding:10px 0 0 10px; line-height:24px;}
+
+.tjwt .btn{ width:133px; height:41px;background:url(../images/help/tjwt.jpg) no-repeat }
+

@@ -1,0 +1,140 @@
+<include file="Public:head" />
+<link href="__TMPL__{$config.THEME}/css/safe.css" rel="stylesheet" type="text/css" />
+<link href="__TMPL__{$config.THEME}/css/user.css" rel="stylesheet" type="text/css" />
+<script src="__TMPL__{$config.THEME}/js/dialog/jquery.artDialog.js?skin=default" type="text/javascript"></script>
+<script src="__TMPL__{$config.THEME}/js/dialog/plugins/iframeTools.js" type="text/javascript"></script>
+
+<style>
+.alert_box{border: 1px solid #ff7e00; background: #FFF; padding:10px 30px 10px; z-index: 99163;}
+.big_alert{width:390px !important; height: 180px; margin-top:-111px !important; margin-left: -215px !important; padding:10px 20px 30px; }
+.global_mark{width: 100%; height: 100%; position: absolute; top:0; left: 0; background: #000; z-index: 99160; margin: 0; opacity: 0.25;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25); -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);-khtml-opacity:0.25;}
+.page_center{position:absolute; top:48%; left:50%;}
+.alert_box .close{position: absolute; top:5px; right: 5px; background: url('./images/close.gif') no-repeat center; cursor:pointer; width: 20px;}
+.alert_box .title{font-size: 14px; color: #333; line-height: 20px; padding-left: 10px;  }
+.big_alert .title{margin-top: 20px; display: block}
+.big_alert .bottom{position: absolute; bottom: 5px; text-align: center; width: 90%; left: 20px;}
+.alert_box .title span{font-size: 14px; color: #F60; line-height: 14px; padding: 8px; display: inline-block; font-weight: bold ; }
+.alert_box .sub_alert{position: absolute; bottom: 25px; text-align: center; border: 1px solid #ff7e00; background: #ffffcc; margin-left: 212px;}
+.warming span{background:url(./images/safe_icon.gif) 0px -300px no-repeat; padding-left: 40px !important; color:#F60;}
+.success{font-size: 14px;}
+.success span{background:url(./images/safe_icon.gif) 0px -268px no-repeat; padding: 8px; padding-left: 40px !important; color:#F60;}
+.error span{background:url(/images/safe_icon.gif) 0px -332px no-repeat; padding: 8px; padding-left: 40px !important;}
+
+.alert_box .ab_content{margin-top: 5px;color:#666; text-align: center;}
+</style>
+<!--header-->
+<script type="text/javascript">
+    setInterval('showBanner()',15000);
+
+function showBanner(){
+    $(".banner_embed1").toggle();
+    $(".banner_embed2").toggle();
+}
+</script>
+
+
+    <!--主体内容开始-->
+    
+    <div class="u_box container">
+  <div class="dh"> 你现在所在的位置：
+      <a href="/">首页</a> &gt; 
+      <a href="/user/">用户中心</a> &gt; 
+      <a href="/pwd/"><span>找回密码</span></a>
+  </div>
+  <dl class="lose">
+    <dt>
+        <span class="s0" id="tab">找回密码流程：</span>
+        <span class="s1" id="tab1">输入账号信息</span>
+        <span class="s3" id="tab3">验证身份信息</span>
+        <span class="s4" id="tab4">重设密码</span>
+        <span class="s5" id="tab5">完成</span>
+    </dt>
+    <script type="text/javascript">
+        document.getElementById('tab3').className = 's03';
+    </script><div class="benLoseContainer">
+<div class="top_tab">
+    <div class="tab" id='tab1'><div class="tab_bg">帐号：{$username}</div><div class="tab_r">&nbsp;</div></div>
+    <div class="tab on" id='tab2'><div class="tab_bg">身份验证方式：邮箱验证</div><div class="tab_r">&nbsp;</div></div>
+    <a href="/accounts/forget_password" style="float: right; color: #09F;">返回上级>></a>
+    <br style="clear: both;" />
+</div>
+<div class="select_type" style="border: none; margin-left: 10px; margin-top: 40px;"><div class="icon icon_qq title">第二步：验证身份信息</div></div>
+<div class="centet_btn">
+    <form action="{:U('Accounts/forget_password_s')}" method="post" class="ajax" />
+        <input name="username" value="{$u_info.username}" type="hidden" />
+        <input name="t" value="{$u_info.email}" type="hidden" />
+        <div>您在平台的邮箱密保账号是: <span style="color:#F60;">{$u_info.email}</span></div>
+        <br />
+        <input class="submit"name="submit" type="submit" value="发送验证邮件" />
+    </form>
+</div>
+</div>
+  <script>
+var form_callback = function(result){
+    if (result.state){
+        show_alert({
+            'msg':'验证邮件已为您发送成功！',
+            'type':'big',
+            'success': true,
+            'mail_url':result.data.mail_url,
+            'content':"如在邮件中点击验证链接后本页面仍未跳转，请点击“完成验证”按钮<div class=\"centet_btn\"><input type=\"submit\" id=\"next_url\" class=\"submit\" value=\"完成验证\" disabled=\"disabled\"/></div><div class=\"bottom\">如5分钟内未收到，请点击：<a href='#' style='color:blue' onclick=\"$('form.ajax').submit();return false;\">重新发送验证</a></div>"
+        });
+        refresh_state('/pwd/validate_sta.php', 5);
+    }else{
+        $('#info').text('邮件发送失败');
+    }
+}
+</script>
+
+            <div><a href="http://www.qq163.com/kefu/online.html" style="color: #09F; display:block; margin:15px 10px 10px; display: inline-block; float: right;" target="_blank">寻求人工服务>></a></div>
+            <br style="clear: both;">
+            </div>
+        </div>
+        <br style="clear:both" />
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<include file="Public:footer"/>
+<!--媒介统计-->
+<script type="text/javascript" src="http://record.qq163.com/p.js"></script><script language="javascript" type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="/js/stage/plat_action.js"></script>
+<script language="javascript" type="text/javascript" src="/js/safe.js"></script>
+<script type="text/javascript">
+var _running = 0;
+$('.win_open').click(function(){
+    if ( $('body .float_div').length<=0 ){
+        var html = '<div class="float_div">';
+        html += '<div class="float_title"><span></span><a class="close" href="#"></a></div>';
+	html += '<iframe name="float_box" frameborder="0" height="504" marginheight="0" marginwidth="0" scrolling="no" width="100%" src="" style="position:relative"></iframe>';
+	html += '</div>';
+		
+	$('body').append(html);
+        $('body .float_div').css('top',$(window).scrollTop()+($(window).height()<$('.float_div').height()?0:($(window).height()-$('.float_div').height())/2));
+        //$('body').append('<div class="global_mark" id="f_global_mark"></div>');
+    }
+    $('body .float_div .float_title span').text($(this).attr('title'));
+    $('body .float_div iframe').attr('src',$(this).attr('href'));
+    $('body #f_global_mark').css({
+        'left':0,
+        'top':0,
+        'width':$(document).width(),
+        'height':$(document).height()
+    });
+    //$('html').css('overflow','hidden');
+    $('body .float_div').show();
+    $('body #f_global_mark').show();
+    return false;
+});
+
+$('.float_title .close').live('click',function(){
+    $('html').css('overflow','auto');
+    $('body .float_div').hide();
+    $('body #f_global_mark').hide();
+    location.reload();
+    return false;
+});
+    when_close_win();
+</script>
+

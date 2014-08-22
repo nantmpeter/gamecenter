@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>31wan - 后台管理中心</title>
+<link href="__PUBLIC__/admin/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/zh-cn-system.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/table_form.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles1.css" title="styles1" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles2.css" title="styles2" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles3.css" title="styles3" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles4.css" title="styles4" media="screen">
+
+</head>
+<body>
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style>
+<script>
+</script>
+
+<div class="pad-10">
+<div class="col-tab">
+
+<div id="div_setting_1" class="contentList pad-10" style="">
+<form action="" method="post" id="myform" enctype="multipart/form-data">
+<table width="100%" class="table_form">
+  <tbody>
+ 
+  	<tr>
+	<th width="120">订单号：</th>        
+	<td>{$info.orderid}</td>
+	</tr>			
+   	<tr>
+	<th width="120">所属游戏：</th>        
+	<td>{$info.gamename}[{$info.servername}]</td>
+	</tr>	
+     	<tr>
+	<th width="120">充值账户：</th>        
+	<td>{$info.pay_to_account}</td>
+	</tr>
+	<tr>
+	<th width="120">充值方式：</th>        
+	<td>{$info.payname}</td>
+	</tr>
+	
+	<tr>
+	<th width="120">金额：</th>        
+	<td>{$info.pay_money}</td>
+	</tr>
+	
+	<tr>
+	<th width="120">充值时间：</th>        
+	<td>{$info.pay_time|date='m/d H:i:s',###}</td>
+	</tr>
+	<tr>
+	<th width="120">订单状态：</th>        
+	<td><switch name="info.order_status">
+                  <case value="0,0,0">下单未付款</case>
+                  <case value="1,1,1">掉单</case>
+                  <case value="2,2,2"><font color='green'>充值成功</font></case>
+                  </switch></td>
+	</tr>
+	
+<tr>
+	<th width="120">游戏充值状态：</th>        
+	<td><switch name="info.game_status"><case value="0">未充值</case>
+                  <case value="1"><font color='green'>充值成功</font></case>
+                  </switch></td>
+	</tr>
+	
+	
+	<tr>
+	<th width="120">获得元宝：</th>        
+	<td>{$info.get_coin}</td>
+	</tr>
+		<tr>
+	<th width="120">实际充值金额：</th>        
+	<td>{$info.pay_really_money}</td>
+	</tr>
+		<tr>
+	<th width="120">充值IP：</th>        
+	<td>{$info.pay_ip}</td>
+	</tr>
+	
+	<tr>
+	<th width="120">充值类型：</th>        
+	<td><switch name="info.pay_way_num"><case value="0">直充游戏</case>
+                  <case value="1"><font color='green'>充值到平台</font></case>
+                  </switch></td>
+	</tr>
+</tbody></table>
+</div>
+
+<div class="bk15"></div>
+
+</form>
+</div>
+
+
+
+</body></html>

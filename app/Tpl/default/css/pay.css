@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{ width:960px; margin:auto; overflow:auto; background:url(../images/stage/bg1.png) repeat-x 0 0;}
+.b_nav{ float:left; width:176px; position:relative;}
+.b_nav h3{ height:33px; color:#fff; text-align:center; line-height:30px; background:url(../images/stage/b1.jpg) 0 -99px;}
+.b_nav ul{ background:#f1f7ff; border:1px solid #adc8eb; border-top-width:0; width:174px; padding:5px 0 20px;}
+.b_nav li{ height:29px; padding-top:5px}
+.b_nav li a.pa1{display:block;text-indent:30px;height:25px;width:144px;  background:url(../images/stage/bank_i.png) no-repeat 0px 0px; line-height:25px}
+.b_nav li a.pa2{display:block;text-indent:50px;height:34px;width:174px; background:url(../images/stage/bank_i.png) no-repeat 0 -34px;
+}
+.b_nav li a.pa3{display:block;text-indent:50px;height:34px;width:174px; background:url(../images/pay_icon/bank_i.png) no-repeat 0 -68px;
+}
+
+.b_nav li.on{ background:url(../images/stage/5.png) 0 -140px; font-weight:bold; width:181px; margin-left:-1px; margin-right:-6px;position:relative;}
+.b_nav li.on a{color:#fff;}
+.b_nav li a{ display:block; width:138px; text-indent:30px; margin:auto}
+
+.b_nav li a.ka1{background:url(../images/pay_icon/bank_i.png) no-repeat;}
+.b_nav li a.ka3{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -34px;}
+.b_nav li a.ka20{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -68px;}
+.b_nav li a.ka5{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -102px;}
+.b_nav li a.ka27{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -136px;}
+.b_nav li a.ka12{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -170px;}
+.b_nav li a.ka6{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -238px;}
+.b_nav li a.ka9{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -272px;}
+.b_nav li a.ka10{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -306px;}
+.b_nav li a.ka18{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -340px;}
+.b_nav li a.ka19{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -204px;}
+.b_nav li a.ka22{background:url(../images/pay_icon/bank_i.png) no-repeat 0 -306px;}
+/*#cz_nav ul li i {display: block;width: 48px;height: 42px;float: left;}
+.bank_i{ position:absolute;width:25px; height:384px; left:15px; top:43px; background:url(../images/pay_icon/bank_i.png) no-repeat; z-index:10;}
+*/
+
+
+.pay{ float:left; width:544px; margin-left:4px; border:1px solid #adc8eb; background:#fff url(../images/stage/c10.png) repeat-x; padding-bottom:50px; position:relative;}
+.pay h3{height:30px; line-height:30px; border-left:1px solid #fff;border-right:1px solid #fff; padding-left:28px; background:url(../images/stage/i1.png) no-repeat 10px 8px;}
+.pay h3 span{ color:#ec550b;}
+.pay a.q{ position: absolute; top:0; line-height:30px; right:12px; display:inline-block; padding-left:17px;color:#ec550b;}
+
+.service{ float:right; width:228px;background:#fff url(../images/stage/c10.png) repeat-x; border:1px solid #adc8eb; height:131px; position:relative;}
+.service h3{height:30px; line-height:30px; border-left:1px solid #fff;border-right:1px solid #fff; padding-left:20px;}
+.service p{ padding:10px 20px 0; line-height:26px; position:relative; z-index:1000;}
+.service p a{ width:60px; display:inline-block; background:url(../images/stage/b1.jpg) 0 -321px; color:#fff; text-align:center;}
+.service .bg{ width:63px; height:116px; background:url(../images/stage/10.jpg); position:absolute; top:15px; right:0; z-index:9;}
+
+.faq{ float:right; width:228px;background:#fff url(../images/stage/c10.png) repeat-x; border:1px solid #adc8eb; margin-top:5px;}
+.faq h3{height:30px; line-height:30px; border-left:1px solid #fff;border-right:1px solid #fff; padding-left:20px;}
+.faq ul{padding:8px 10px;}
+.faq li{ line-height:29px; height:29px; border-bottom:1px dotted #bccadc; overflow:hidden; padding-left:18px; background:url(../images/stage/i1.png) no-repeat 2px 8px;}
+
+.pay .pay_m ul{ padding:30px 0 0 20px;width:520px;overflow:hidden;}
+.pay .pay_m li{ margin-bottom:10px; width:520px; overflow:none;}
+.pay .pay_m li label{ width:120px; display:inline-block; float:left; text-align:right; padding-right:8px;}
+.pay .pay_m li .data label{ width:56px; display:inline-block; float:left; text-align:left; padding-right:10px;}
+.pay .pay_m li .data .money_list label{ width:150px; display:inline-block; float:left; text-align:left; padding-right:10px;}
+.pay .pay_m li.cz_conbc .bank_list_a label{ width:auto; display:inline-block; float:left; text-align:left;}
+.pay .pay_m li.cz_conba table{line-height: 30px;}
+.pay .pay_m li.cz_conba table input{height: 24px;line-height: 24px;vertical-align: middle;text-indent: 4px;width: 196px;}
+
+
+.pay .pay_m .data{ float:left; width:350px; overflow:auto;}
+.pay .pay_m .data p{ width:140px; float:left; height:28px; width:100%;}
+.pay .pay_m .data p input{ margin-right:3px;}
+.pay .pay_m .data .text2{width:100px; height:24px; background:#fff; border:1px solid #9fb0c5; text-indent:4px; line-height:24px;}
+.pay .pay_m .data .other{ width:350px;}
+.pay .pay_m .get strong{color:#ec550b;}
+.pay .pay_m .banks{width:520px; overflow:hidden;}
+.pay .pay_m .banks strong{ display:block; line-height:30px; border-bottom:1px dotted #999; width:502px; margin-bottom:15px; float:left;}
+.pay .pay_m .banks p{ float:left; width:173px; height:40px; position:relative;}
+.pay .pay_m .banks p input{ margin-top:6px;}
+.pay .pay_m .banks p img{position:absolute; left:20px; top:0;}
+.pay .pay_m li.bank_a .more{ background:url(../images/stage/b1.jpg) 0 -374px; width:511px; height:23px;text-align:center; padding-top:6px; cursor:pointer; overflow:hidden;}
+.pay .pay_m .text1{width:73px; height:22px; background:url(../images/stage/b1.jpg) -154px -299px; border:none;}
+.pay .pay_m .text3{width:145px; height:45px; background:url(../images/stage/b1.jpg) -250px -45px; border:none;  margin:20px 0 20px 182px; display:block;cursor: pointer;}
+.pay .ts{ padding-left:35px;}
+.pay .ts strong{ display:block;color:#ec550b; line-height:30px;}
+
+
+/*提示窗*/
+.msg{ position:absolute; top:50%; left:50%; width:452px; margin-left:-226px; margin-top:-100px; background:#fff; border:4px solid #5181c1; z-index:10000; padding-bottom:20px;}
+.msg h5{ line-height:36px; background:url(../images/stage/c16.png); height:39px; text-indent:20px;}
+.msg .close{ width:37px; height:36px; background:url(../images/stage/c1.png) right -78px; position:absolute; top:0; right:0; cursor:pointer;}
+.msg .ban{ border-bottom:1px solid #4e7ebb; height:25px; width:430px; margin:10px auto 0;}
+.msg .ban li{ display:block; float:left; width:80px; height:25px; line-height:25px; text-align:center; margin-left:2px; text-align:center; background:url(../images/stage/b1.jpg) -80px -347px;}
+.msg .ban ul.last_play_server li{display:block; float:left;width:150px;height:25px; line-height:25px; text-align:center; margin-left:2px; text-align:center; background:none;}
+.msg .ban a:hover{ text-decoration:none;}
+.msg .ban li.on{background:url(../images/stage/b1.jpg) 0 -347px; color:#fff;}
+.msg .payg_list,.msg .pay_last_game_list{ padding:10px 0 10px 20px; overflow:auto; width:432px;}
+.msg .payg_list li,.msg .pay_last_game_list li{float: left; width: 106px; height: 26px;overflow: hidden;position: relative; text-indent:22px;line-height:22px;}
+.msg .payg_list li span,.msg .pay_last_game_list li span{ display:block; width:16px; height:18px; background-image:url("http://img.qq163.com/common_top.gif"); background-repeat:no-repeat; position:absolute; left:2px; top:2px;}
+.msg .pages{text-align:center; clear:both;}
+.msg .pages a{display:inline-block; margin-right:5px;line-height:18px; padding:2px 5px; border:1px solid #136974; background:#4478be; color:#bff4fb;}
+.msg .pages a:hover{text-decoration:none;color:#fff;}
+.msg .pages strong{ display:inline-block; margin-right:5px;line-height:18px; padding:2px 5px;color:#f52307;}
+.msg .pages span.disabled{border: 1px solid #136974;display: inline-block;line-height: 18px;margin-right: 5px;padding: 2px 5px;}
+
+
+.msg .f_list{ padding:10px 0 10px 20px; overflow:auto; width:432px;}
+.msg .f_list li{float: left; width: 106px; height: 26px;overflow: hidden;}
+.msg .search{position:absolute;width:260px;left:200px;top:8px;}
+.msg .search .text{ width:150px; height:20px; float:left; margin-right:2px; line-height:20px;}
+.msg .search .text1{ width:62px; height:22px; background:url(../images/stage/b1.jpg) 0 -299px; border:none;}
+
+/*选择游戏以及服务器定位*/
+#this_select_game {height: 22px;line-height: 22px;margin-left: 1px;margin-top: 2px;padding-left: 32px;position: absolute;width: 60px;}
+#cz_select_server {background: none repeat scroll 0 0 #F7FDFF;border: 4px solid #CACACA;left: 24px;position: absolute;top: 178px;width: 448px;}
+
+/*选择卡类*/
+.card_money_a .money_list .item {display: block;float: left;width: 45%;}
+
+/*银行列表信息*/
+.bank_a{margin-left: 0px;padding-top: 5px;}
+.cz_conbc .bank_item {margin-bottom: 8px;}
+.cz_conbc img {vertical-align: middle;margin-left: -8px;}
+.fl {float: left;}
+.bank_list_a h3{border-bottom:1px dashed #E1E1E1;font-size:12px !important;margin-bottom:6px !important;width:95%;}
+.bank_more_a {display: none;}
+
+.benShowSelectGame{ display:none;}
+
+/*充值确认弹出框*/
+#cz_ok{position:absolute;top:178px;left:24px;width:448px;border:4px solid #bcbcbc;background:#f7fdff; z-index:43999;}
+#cz_ok h3{ background:url(../images/newpay_bg08.png) repeat-x;  padding-left:14px; line-height:38px; }
+#cz_ok h3 span{ float:right; padding-top:10px; padding-right:10px;}
+#cz_ok ul{ padding-left:130px;}
+#cz_ok ul li{ float:left; width:79px; height:30px; padding-left:14px; padding-top:12px; padding-bottom:12px;}
+#czbut_ok{ background:url(../images/paybut_bg01.png) no-repeat; border:none;width:79px; height:30px;}
+#czbut_Re{ background:url(../images/paybut_bg02.png) no-repeat; border:none;width:79px; height:30px;}
+.czbutton, .sub_btn, #czbut_ok, .close_ok_btn {cursor: pointer;}
+
+/*弹出提示窗口*/
+#Pop{background:#fffbec;border:4px solid #cacaca;display:none;height:210px;line-height:22px;position:absolute;width:430px;z-index:43999;}
+#pay_about_a{background:#fff;border:4px solid #cacaca;display:none;height:500px;line-height:22px;position:absolute;width:800px;z-index:43999;}
+#Pop h3,#pay_about_a h3{background:url(../images/newpay_bg08.png) repeat-x;padding-left:14px;line-height:38px;height:38px}
+#Pop h3 span,#pay_about_a h3 span{float:right;padding-top:10px;padding-right:10px;}
+#Pop .topFinish,#pay_about_a .topFinish{color:#F44520;font-family:"黑体";font-size:18px;font-weight:300;height:38px;padding-top:28px;text-align:center;}
+#Pop .Tips,#pay_about_a .Tips{clear:both;color:#282828;font-size:12px;line-height:22px;padding:0 20px;}
+#Pop .an,#pay_about_a .an{height:50px;padding:18px 0 0 90px;width:250px;}
+#Pop .an a{background:none repeat scroll 0 0 #FFFDCA;border:1px solid #F44520;color:#F44520;display:block;float:left;font-weight:bold;line-height:28px;margin-right:15px;text-align:center;width:100px;}
+#Pop .Back{text-align:right;}
+#Pop .Back a{color:#0B59DA;font-weight:bold;padding-right:20px;text-decoration:underline;}
+#Pop .Back a:hover{color:#0B59DA;text-decoration:none;}
+.alert-info {
+background-color: #d9edf7;
+border-color: #bce8f1;
+color: #3a87ad;
+}
+.alert {
+padding: 8px 35px 8px 14px;
+margin-bottom: 18px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: #fcf8e3;
+border: 1px solid #fbeed5;
+border-radius: 4px;
+color: #c09853;
+}

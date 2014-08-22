@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mid{ width:960px;  margin:auto; overflow:auto;}
+.box{width:960px; height:264px;  margin:auto;}
+/*幻灯*/
+.focus{ width:465px; height:249px; background:url(../images/stage/2.png) -239px 0;float:left; padding:15px 0 0 15px;}
+.pClass {background-color: #000000;bottom: 0;height: 27px;left: 0;margin: 0;opacity: 0.5;position: absolute;width: 100%;z-index: 200;}
+.pClass ul {bottom: 5px;margin: 0;position: absolute;right: 8px;}
+.tagClass, .activeClass {background-color: #666666;border: 1px solid #999999;color: #CCCCCC;cursor: pointer;float: left;font-family: "Verdana";font-size: 10px;height: 12px;line-height: 12px;list-style-type: none;margin: 0 3px 0 0;opacity: 0.7;text-align: center;width: 18px;}
+.activeClass {background-color: blue;}
+.titleClass {color: #FFFFFF;font-weight: bold;left: 0;margin: 0 0 0 12px;position: absolute;top: 198px;z-index: 300;}
+.divClass {border: medium none;left: 0;position: absolute;top: 0;z-index: 100;}
+
+/*开服时刻表*/
+.date{width:256px;height:254px; float:right; background:url(../images/stage/2.png) -719px 0; padding:10px 0 0 3px; position:relative; margin-right:-9px;}
+.date h3{height:33px;  line-height:32px; color:#fff; text-indent:30px;}
+.date_s { width:234px;}
+.date_s table{ width:100%;}
+.date_s th{ background:#e5edf4;line-height:32px;}
+.date_s td{border-top:1px dotted #a4b9d1; line-height:31px; text-align:center; background:#f2f8ff;}
+.date_s .highlight, .date_s .highlight a {color: #EB760A;}
+
+
+/*推荐游戏*/
+.tj_games{ width:958px; min-height:560px; margin:auto; background:#e6f0fc; border:1px solid #adc8eb;}
+.tj_games ul{ border:1px solid #fff; width:956px; height:264px; padding-top:8px;}
+.tj_games ul li{ width:223px; height:254px; float:left; background:#fff; border:1px solid #cadcf1; margin-left:12px; margin-top:10px; position:relative; display:inline; margin-right:-1px;}
+.tj_games ul li .g_pic{ height:146px;}
+.tj_games ul li .g_tit{ padding:0 15px; line-height:26px; height:30px;}
+.tj_games ul li .g_tit h2{ color:#eb760a; font-size:12px; float:left;}
+.tj_games ul li .g_tit h2 a{color:#eb760a; }
+
+.tj_games ul li .g_lx { float:right; }
+
+.tj_games ul li .enter_g { float:left; width:83px; height:24px; margin:0 0 0 8px;}
+.tj_games ul li .enter_g a.enter{ display:block; width:83px; height:24px; background:url(../images/stage/b1.jpg) -420px -232px; text-align:center; color:#fff; text-indent:6px;}
+.tj_games ul li .enter_g a.enter:Hover{ text-decoration:none;}
+
+.tj_games ul li p{ padding:0 15px; line-height:18px; height:42px;}
+
+.tj_games ul li .links{ width:122px; height:24px; background:url(../images/stage/b1.jpg) -420px -152px; margin:0 0 0 3px; text-indent:1px;float:left; }
+.tj_games ul li .links a{width:38px; display:block; float:left; text-align:center;}
+
+.tj_games ul li .hot{ position:absolute; left:-1px; top:-1px; background:url(../images/stage/hot1.png) 0 0; width:54px; height:54px;text-indent:-1000em;
+_background: url(../images/stage/hot1.png) 0 0 !important;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="../images/stage/hot1.png");
+_background:none;}
+.tj_games ul li .tj{position:absolute; left:-1px; top:-1px; background:url(../images/stage/tj1.png) 0 0; width:54px; height:54px;text-indent:-1000em;
+_background: url(../images/stage/tj1.png) 0 0 !important;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="../images/stage/tj1.png");
+_background:none;}
+.tj_games ul li .enter_g { float:left; width:83px; height:24px; margin:0 0 0 8px; *margin:0 0 0 3px;}
+
+.bg1{ width:960px; height:4px; background:url(../images/stage/c11.png); line-height:1px; overflow:hidden; margin:auto;}
+
+/*新闻*/
+.mid .news{ float:left; width:458px; border:1px solid #adc8eb; background:#fff; position:relative;margin-top:8px; margin-left:10px;}
+.mid .news h3{ height:30px; line-height:30px; background:url(../images/stage/c10.png); border-left:1px solid #fff;border-right:1px solid #fff;}
+.mid .news h3 a{ display:block; float:left; width:68px; text-align:center;}
+.mid .news h3 a.on{ background:#fff; border-right:1px solid #bcd3ef;border-left:1px solid #bcd3ef; margin-left:-2px;}
+.mid .news .news_all{ padding:6px 15px;}
+.mid .news li{ line-height:29px; height:29px; border-bottom:1px dotted #bccadc; overflow:hidden; padding-left:18px; background:url(../images/stage/i1.png) no-repeat 2px 8px;}
+.mid .news li span{ float:right; color:#6f88a6;}
+.mid .news li.big{ text-align:center; font-size:14px;  height:35px; font-weight:bold; background:none; padding:0;}
+.mid .news li.big a{ color:#eb760a;}
+.mid .news a.more{ position:absolute; top:2px; right:15px; color:#2868b8;}
+
+/*常见问题*/
+.faq{width:238px; border:1px solid #adc8eb;background:#fff url(../images/stage/c10.png) repeat-x 0 0; float:right; position:relative;margin-top:8px; }
+.faq h3{ height:30px; line-height:30px; background:url(../images/stage/i1.png) no-repeat 10px -32px; border-left:1px solid #fff;border-right:1px solid #fff; padding-left:30px;}
+.faq ul{padding:9px 15px;}
+.faq li{ line-height:29px; height:29px; border-bottom:1px dotted #bccadc; overflow:hidden; padding-left:18px; background:url(../images/stage/i1.png) no-repeat 2px 8px;}
+.faq a.more{ position:absolute; top:2px; right:15px; color:#2868b8;}

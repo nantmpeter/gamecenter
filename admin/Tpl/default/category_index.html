@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<!-- <link href="__PUBLIC__/admin/css/layout.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/common.css" type="text/css" rel="stylesheet">
+<link href="__PUBLIC__/admin/css/Admin_css.css" type=text/css rel=stylesheet> -->
+<link href="__PUBLIC__/admin/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="__PUBLIC__/admin/css/style.css" type="text/css" rel="stylesheet">
+<link href="__PUBLIC__/admin/css/table_form.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.min.js"></script>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+-->
+</style>
+</head>
+ 
+<body>
+<div class="table-list">
+<table cellspacing="0" width="100%">
+  <thead>
+    <tr class="STYLE1" >
+    <th align="center">栏目名称</th>
+     <th align="center">栏目ID</th>
+     <th align="center">显示描述</th>
+     <th align="center">用户投稿</th>
+     <th align="center">导航排序</th>
+     <th align="center">导航显示</th>
+	 <th align="center">首页排序</th>
+     <th align="center">首页显示</th>
+	 <th align="center">Dly页面</th>
+     <th align="center">操 作</th>
+      </tr>
+    </thead>
+  <tbody>
+  <volist name="list" id="vo">
+  <tr class="STYLE1" >
+    <td align="center">{$vo.space}{$vo.cname}
+	<eq name="vo.islink" value="1">[{$vo.total})</eq>
+	</td>
+    <td align="center">{$vo.typeid}</td>
+    <td align="center">
+<switch name="vo.is_showdesc" >
+<case value="1">显示</case>
+<case value="0">不显示</case>
+</switch>
+</td>
+    <td align="center" class="tdleft"><eq name="vo.isuser" value= "1">是<else/>否</eq></td>
+    <td align="center"><eq name="vo.ismenu" value= "1"></eq>{$vo.drank}</td>
+    <td align="center"><eq name="vo.ismenu" value= "1">显示<else/>不显示</eq></td>
+	<td align="center"><eq name="vo.isindex" value= "1">{$vo.irank}<else/>-</eq></td>
+    <td align="center"><eq name="vo.isindex" value= "1">显示<else/>不显示</eq></td>
+	 <td width="6%" align="center">
+ <switch name="vo.show" >
+<case value="1">显示</case>
+<case value="0">不显示</case>
+</switch>
+	 </td>
+    <td align="center">
+    <a href="__URL__/category_edit/typeid/{$vo.typeid}"><font color="#3e3e3e">编辑</font></a> | <a href="__URL__/category_del/typeid/{$vo.typeid}" onClick="JavaScript:return confirm('删除的栏目必须无子栏目,且无文章！确定？')"><font color="#3e3e3e">删除</font></a>
+    </td>
+  </tr>
+ </volist> 
+ </tbody>
+</table>
+<div style="text-align:center;margin:10px;">
+<hr>
+<include file="Index:copy" />  
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link href="__PUBLIC__/admin/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="__PUBLIC__/admin/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="__PUBLIC__/admin/js/bootstrap.min.js" type="text/javascript"></script>
+<title>补单页面</title>
+</head>
+<body>
+ <div class="container">
+   <form class="form-horizontal" method="post" action="{:U('pay/bd')}">
+  <div class="control-group">
+    <label class="control-label" for="orderid">订单号</label>
+    <div class="controls">
+      <input type="text" id="orderid" name="orderid" placeholder="订单号" value="{$info.orderid}" readonly>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="pay_to_account">充值用户</label>
+    <div class="controls">
+      <input type="text" id="pay_to_account" name="pay_to_account" placeholder="充值用户" value="{$info.pay_to_account}" readonly>
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="pay_money">充值金钱</label>
+    <div class="controls">
+      <input type="text" id="pay_money" name="pay_money" placeholder="充值金钱" value="{$info.pay_money}" readonly>
+      <span class="add-on">元</span>
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="paygame">充值游戏</label>
+    <div class="controls">
+      <input type="text" id="paygame" name="paygame" placeholder="充值游戏" data="{$info.gid}" value="{$info.gamename}" readonly>
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="payserver">服务器</label>
+    <div class="controls">
+      <input type="text" id="payserver" name="payserver" placeholder="充值服务器" data="{$info.sid}" value="{$info.servername}" readonly>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn">补单</button>
+    </div>
+  </div>
+</form>
+  </div>
+</body>
+</html>

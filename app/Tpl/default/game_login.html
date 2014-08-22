@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$info.gamename}-006wan游戏平台—做玩家最爱，最信任的游戏平台！</title>
+<meta name="keywords" content="{$info.desc1}">
+<meta name="description" content="{$info.content}">
+
+<style type="text/css">
+
+	* { word-break: break-all; word-wrap: break-word; }
+
+	body, th, td, input, select, textarea, button { font: 12px/1.5em Verdana, "Lucida Grande",Arial, Helvetica,sans-serif; }
+
+	body, h1, h2, h3, h4, h5, h6, p, ul, dl, dt, dd, form, fieldset { margin: 0; padding: 0; }
+
+	h1, h2, h3, h4, h5, h6 { font-size: 1em; }
+
+	ul li { list-style: none; }
+
+	a {color: #2C629E; text-decoration: none; }
+
+	a:hover { text-decoration: underline; }
+
+	a img { border: none; }
+
+	textarea { border: 1px solid #ddd; overflow: auto; }
+
+	.t_input { padding: 3px 2px; border: 1px solid #ddd; line-height: 16px; }
+
+	.link_td { background: url(/templets/kai/img/hy_2t.jpg); color: #CEC9C9; height: 33px; line-height: 33px; text-align: center; }
+
+	.link_td a { color: #3C3C3C; }
+
+	.link_tdbox { width: 960px; margin: 0 auto; }
+
+	.mrdia, .mrdia a { color: #2A8EC9; }
+
+</style>
+
+<script>
+
+function AddFavorite(sURL, sTitle){
+    try{
+        window.external.addFavorite(sURL, sTitle);
+    }catch (e){
+        try{
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }catch (e){
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+} 
+
+</script>
+
+</head>
+
+<body scroll="no">
+
+<table border="0" cellPadding="0" cellSpacing="0" height="100%" width="100%">
+
+<tr>
+
+<td height="30" class="link_td">
+
+
+
+<div class="link_tdbox">
+
+	<div style="float:left;  width:120px; text-align: left;">
+
+		<a href="/" target="_blank"><img src="/app/Tpl/default/images/logo.jpg"  height="30" /></a>
+
+	</div>
+
+	<div style="float:left; text-align: left;">
+
+    <a href="/" target="_blank">首页</a>
+
+    <span class="pipe">|</span>
+
+    <a href="/hall" target="_blank">游戏中心</a>
+
+    <span class="pipe">|</span>
+    <a href="/members" target="_blank">用户中心</a>
+
+    <span class="pipe">|</span>
+
+    <a href="/service" target="_blank">客服中心</a>
+    <span class="pipe">|</span>
+    <a href="http://bbs.0876yx.com" target="_blank">玩家论坛</a>
+	</div>
+
+	<div style="float:right; text-align: left;" class="mrdia">[<a href="javascript:;" onclick="AddFavorite('http://www.31wan.cn/?f=fav', '31wan网页游戏')"><strong>收藏本站</strong></a>]</div>
+
+</div>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<iframe id="url_mainframe" frameborder="0" scrolling="yes" name="main" src="{$game_url}" style="height: 100%; visibility: inherit; width: 100%; z-index: 1;overflow: visible;"></iframe>
+
+</td>
+
+</tr>
+
+</table>
+
+<div style="display:none">
+
+
+
+</div>
+
+</body>
+
+</html>

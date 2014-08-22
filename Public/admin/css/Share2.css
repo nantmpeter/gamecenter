@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*尾部区*/
+.FootBar{text-align:center; background:url(../images/global/bottom.jpg) repeat-x; height:258px; color:#333}
+.footGroup{width:980px;color:#333;margin:0 auto;}
+.footGroup .guanyu{padding:12px 0px 12px 0px;color:#333;font-weight:bold;}
+.footGroup .guanyu a{padding:0px 10px 0px 10px;color:#333;}
+.footGroup .guanyu a:hover{ color:#E95701}
+.footGroup .dizhi{padding:20px 0px 10px 0px;}
+.footGroup .shidang{color:#DD1110;}
+.footGroup .logoqu{padding:10px 0px 8px 0px;height:87px;text-align:center;}
+.footGroup .logoqu span{ background:url(../images/global/line.jpg) no-repeat top right; display:block; float: left; width:203px; height:87px; margin-right:10px}
+
+.footGroup .logoqu a{display:inline-block;height:87px;font-size:0px;line-height:120px;background:url(../images/dxgw/logo_he.jpg) no-repeat 0px 0px;overflow:hidden; float:left; display:block; margin-left:15px}
+
+.footGroup .beianhao{padding:8px 0px 0px 0px;}
+.footGroup .beianhao span{ margin-right:20px}
+.footGroup a{color:#333;}
+.footGroup a:hover{color:#E95701; text-decoration:underline;}

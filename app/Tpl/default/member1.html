@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link href="http://lib.sinaapp.com/js/bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://lib.sinaapp.com/js/bootstrap/2.2.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://wrongwaycn.github.com/bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="http://wrongwaycn.github.com/bootstrap/docs/assets/js/bootstrap-tab.js"></script>
+    <script src="__TMPL__{$config.THEME}/js/dialog/jquery.artDialog.js?skin=default" type="text/javascript"></script>
+<script src="__TMPL__{$config.THEME}/js/dialog/plugins/iframeTools.js" type="text/javascript"></script>
+    <script type="text/javascript">
+       $('.dropdown-toggle').dropdown();
+       $('#tab').tab('show')
+       $(document).ready(function(){
+    	   $('.btn-primary').click(function(){
+    		   var $nickname = $('#nickname').val();
+    		   var $phone = $('#phone').val();
+    		   var $gender = $('#gender').val();
+    		   var $safe_a = $('#safe_a').val();
+    		   var $safe_q = $('#safe_q').val();
+    		   if($nickname==""||$phone==""||$gender==""||$safe_a==""||$safe_q==""){
+    			   $.dialog.alert('请完善信息再进行更新');
+    			   return false;
+    		   }
+    		   $.ajax({
+    			   url:"{:U('members/update')}",
+    			   data:{'nickname':$nickname,'phone':$phone,'gender':$gender,'safe_a':$safe_a,'safe_q':$safe_q},
+    			   type:'post',
+    			   dataType:'json',
+    			   cache:false,
+    			   complet:function(){
+    				   $('#loading').hide(100);
+    			   },
+    			   error:function(){
+    				   $.dialog.tips('系统发生错误,更新用户资料失败,请稍候重试. ')
+    			   },
+    			   success:function(data){
+    				   if(data.state!="1"){
+    					   $.dialog.alert(data.msg);
+    				   }else{
+    					   $.dialog.tips(data.msg);
+    				   }
+    			   }
+    		   });
+    		   
+    		   $('#loading').ajaxStart(function(){
+    			   $(this).show(100);
+    		   })
+    	   })
+       })
+    </script>
+    <style>
+      body {
+        padding-top: 60px;
+      }
+      .control{ margin-left:205px}
+    </style>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<title>{$config.SITENAME} - 会员中心</title>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+       <div class="navbar navbar-inverse" style="position: static;">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <a class="brand" href="#">{$config.SITENAME}</a>
+                  <div class="nav-collapse collapse navbar-inverse-collapse">
+                    <ul class="nav">
+                      <li class="active"><a href="/">首页</a></li>
+                      <li><a href="{:U('pay/index')}">充值</a></li>
+                      <li><a href="{:U('article/index')}">资讯</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">在线客服</a></li>
+                          <li><a href="#">更多游戏</a></li>
+                          <li><a href="#">论坛</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="navbar-search pull-left" action="">
+                      <input type="text" class="search-query span2" placeholder="Search">
+                    </form>
+                    <ul class="nav pull-right">
+                      <li><a href="#">{$info.username}</a></li>
+                      <li class="divider-vertical"></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">菜单<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">个人资料</a></li>
+                          <li><a href="#">防沉迷验证</a></li>
+                          <li><a href="#">新手卡</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">退出登陆</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+            </div>
+    </div>
+    <div class="container">
+     <!--<ul class="nav nav-pills nav-tabs">
+      <li class="active">
+        <a href="#" data-toggle="tab">最新话题</a>
+      </li>
+      <li><a href="http://google.com.hk" data-toggle="tab">话题分类</a></li>
+      <li><a href="#" data-toggle="tab">其他</a></li>
+    </ul>-->
+    <ul id="tab" class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">常用</a></li>
+            <li class=""><a href="#profile" data-toggle="tab">个人信息</a></li>
+            <li class=""><a href="#profile" data-toggle="tab">新手卡</a></li>
+            <li class=""><a href="#profile" data-toggle="tab">消费记录</a></li>
+            <li class=""><a href="#profile" data-toggle="tab">介绍</a></li>
+
+             
+    </ul>
+    <!-- puts your code here -->
+    <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade in active" id="home">
+     <div class="alert alert-success">
+     Hi,{$info.username}! 欢迎来到{$config.SITENAME} 
+     </div>
+     <div class="row">
+  <div class="span12">
+  <blockquote>
+          <p>您上次登陆时间:{$info.lastlogin_time|date='Y-m-d H:i:s',###}, 登陆Ip:{$info.lastlogin_ip} </p>
+  </blockquote>
+   <strong> 请经常修改密码</strong>以保证您账号的安全!
+   <br/><br/>
+   <ul class="inline">
+     <li>你的积分:<span class="label label-inverse">{$info.point}分</span></li>
+     <li>你的平台币:<span class="label label-warning">{$info.money}个</span></li>
+     <li>当前用户等级:<span class="label label-info">{$info.level}级</span></li>
+     <li>防沉迷检测:<switch name="info.is_fcm"><case value='0'><span class="label label-warning">未通过!请尽快认证以免影响您的游戏收益!</span></case><case value='1'><span class="label label-success">通过</span></case></switch></li>
+     <li>密保邮箱:<span class="label">{$info.email}</span></li>
+   </ul>
+    <div class="row">
+      <div class="span6">
+      <h4><abbr title="系统根据您的游戏喜好智能化推荐">推荐</abbr>您玩 </h4>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>游戏名称</th>
+                  <th>服务器名称</th>
+                  <th>最新服开服时间</th>
+                </tr>
+              </thead>
+              <tbody>
+                <game name="GameView" order="'server.start_time desc'">
+                <tr>
+                <th>{$game.id}</th>
+                <th><a href="{:U('game/login')}?game={$game.gid}&server={$game.sid}" target="_blank" title="登陆游戏">{$game.gamename}</a></th>
+                <th><a href="{:U('game/login')}?game={$game.gid}&server={$game.sid}" target="_blank" title="登陆游戏">{$game.servername}</a></th>
+                <th><a href="{:U('game/login')}?game={$game.gid}&server={$game.sid}" target="_blank" title="登陆游戏">{$game.start_time|date='m/d h:i',###}</a></th>
+                </tr>
+                </game>
+              </tbody>
+            </table>
+      </div>
+      <div class="span6">
+      <h4>你玩过的</h4>
+       <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>游戏名称</th>
+                  <th>服务器名称</th>
+                  <th>登陆时间</th>
+                </tr>
+              </thead>
+              <tbody>
+                <volist name="history" id="v">
+                <tr>
+                  <td></td>
+                  <td>{$v.gamename}</td>
+                  <td>{$v.servername}</td>
+                  <td>{$v.logintime|date='Y年m月d日 H:i:s',###}</td>
+                </tr>
+               </volist>
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="tab-pane fade" id="profile">
+    <div class="bs-docs-example">
+            <table class="table  table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                   <th>First Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>用户名:</td>
+                   <th><input type="text" class="input-medium" id="username" value="{$info.username}" readonly/></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>昵称:</td>
+                <th><input type="text" class="input-medium" id="nickname" value="{$info.nickname}"/></th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>手机:</td>
+                  <th><input type="text" class="input-medium" id="phone" value="{$info.phone}" /></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td>性别:</td>
+                  <th><select name="gender" id="gender">
+                  <switch name="info.gender">
+                  <case value="男"><option value="保密">保密</option><option value="男" selected>男</option><option value="女">女</option></case>
+                  <case value="女"><option value="保密">保密</option><option value="男">男</option><option value="女" selected>女</option></case>
+                  <default/><option value="保密">保密</option><option value="男">男</option><option value="女">女</option>
+                  </switch>
+                  </select></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td>安全提问:</td>
+                  <th><input type="text" class="input-medium" id="safe_a" value="{$info.safe_a}" /></th>
+                </tr>
+                 <tr>
+                  <td></td>
+                  <td>答案:</td>
+                  <th><input type="text" class="input-medium" id="safe_q" value="{$info.safe_q}" /></th>
+                </tr>
+              </tbody>
+            </table>
+            <p class="control"><button type="button" class="btn btn-primary">更新</button>            <button type="reset" class="btn">重置</button> <img id="loading" src="http://www.lanrentuku.com/img/allimg/1212/5-121204193957.gif" style="display:none"/></p>
+          </div>
+    </div>
+  </div>
+    </div>
+    
+</body>
+</html>

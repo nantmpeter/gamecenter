@@ -1,0 +1,35 @@
+/* images */
+.more{ float: right; margin-top:10px; width:40px; height:10px; margin-right:5px;}
+#strategy #scroll_header ul,
+#strategy #scroll_header ul li.nav_current,
+#announce .hd{ background:url(../images/bg_x.gif);background-repeat:repeat-x;}
+
+#strategy .hd .ext,
+#strategy #scroll_header #previous,
+#strategy #scroll_header #next,
+#strategy #scroll_header ul li,
+#strategy .bd ul li{ background:url(../images/bg_icon.gif);background-repeat:no-repeat;}
+
+/* strategy */
+#strategy{ width:522px; height:283px; float:left; margin-right:5px;border:1px solid #eee;}
+#strategy .hd { position: relative; height: 30px; line-height: 30px;}
+#strategy .hd h2 { height: 28px; line-height: 28px; font-size: 14px; color: #333333; padding-left: 10px; }
+#strategy .hd .ext { position: absolute; top: 5px; right: 10px; display: block;  width: 40px; height: 20px; line-height: 20px;text-indent: -999em;overflow:hidden;background-position: -54px -115px;  }
+#strategy #scroll_header { height: 40px; line-height: 40px; width: 510px; margin: 0 auto; overflow:hidden; }
+#ranks_change_bar { float:left; height: 40px; line-height: 40px; overflow:hidden;}
+#strategy #scroll_header a { display: block; width: 30px; height: 40px; text-indent: -999em;}
+#strategy #scroll_header #previous { float: left; background-position: 0 -1061px;}
+#strategy #scroll_header #next { float: right; background-position: -144px -1061px;}
+#strategy #scroll_header ul { float: left; width: 450px; height: 40px; line-height: 40px;background-color:#FFF; overflow: hidden; background-position:0 -89px;}
+#strategy #scroll_header ul li { float:left; margin-right:-1px; width: 91px; height: 40px; text-align: center; background-position:right -1130px; cursor: pointer; overflow: hidden; font-weight: bold }
+#strategy #scroll_header ul li.nav_current { background-position:0 -129px; color: #FFF;}
+#strategy .hot_ranks_list { padding-bottom:6px; }
+#strategy .bd { width: 510px; margin:0 auto; overflow: hidden;zoom:1;}
+#strategy .bd ul { display:none; width: 100%; overflow:hidden; margin-left:-10px; padding:5px 0 10px; }
+#strategy .bd .current { display:block; }
+#strategy .bd ul li { float: left; display:inline; margin-left:20px; width: 225px; height: 20px; line-height: 20px; padding: 4px 0 4px 10px; overflow: hidden; background-position:-235px -1165px; }
+#strategy .bd li a { white-space:nowrap; color:#333; text-decoration:none;}
+#strategy .bd li a:hover{ color:#F60;}
+#strategy .bar { margin:0 auto; width: 475px; height: 35px; line-height: 35px; padding-left: 20px;position: relative; border-top: 1px dotted #DDDDDD; background-position: 0 -136px;}
+#strategy .bar .ext {position: absolute; bottom: 0; right: 0; color : #FF9900; }
+

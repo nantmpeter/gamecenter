@@ -1,0 +1,35 @@
+/***
+ *	DedeCMS v5.3 Style (grass green)
+ *	dedecms.com  Author pigz  2008-11-10 09:32
+ **/
+
+
+.dede_pages{
+}
+.dede_pages ul{
+	float:left;display: inline;
+	
+}
+.dede_pages ul li{
+	float:left;display: inline; float:left;
+	font-family:Tahoma;
+	line-height:15px;
+	margin-right:6px;
+	border:1px solid #E9E9E9;
+}
+.dede_pages ul li a{
+	float:left;
+	
+	color:#555;
+	display: inline;
+}
+.dede_pages ul li a:hover{
+	color:#690;
+	text-decoration:none;
+
+}
+.dede_pages ul li.thisclass,
+.dede_pages ul li.thisclass a,.pagebox ul li.thisclass a:hover{
+	background-color:#F8F8F8; color:#06C;
+	font-weight:bold;
+}

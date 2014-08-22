@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{ width:960px;  margin:auto; background:url(../images/stage/bg1.png) repeat-x 0 0;}
+
+.l{ width:230px; float:left; }
+.l .help{ width:230px;}
+.l .help h3{ background:url(../images/stage/b1.jpg) 0 -66px;}
+.l .user{ height:252px;}
+
+/*今日开服*/
+.game{ float:right; width:718px; height:275px; background:#f4f9ff; border:1px solid #adc8eb; position:relative;}
+.game .g_img {border:1px solid #9ebade; margin:12px auto 0; width:688px; height:160px;}
+.game .g_img img{ padding:3px; border:1px solid #fff;}
+.game .about{ padding:10px 0 0 20px; height:52px; line-height:22px; width:452px; font-weight:bold;}
+.game .about p{ font-weight:normal;}
+.game .about span,.game .about em{color:#36659d; font-weight:normal; padding-right:5px;}
+.game .about em{color:#ec550b;}
+.game .btn{ padding-left:20px;}
+.game .btn a,.game_server_list .g_more .btn a{ display:block; height:22px; margin-right:5px; text-align:center; float:left; line-height:22px; color:#464646;}
+.game .btn a:hover,.game_server_list .g_more .btn  a:hover{ text-decoration:none;}
+.game .btn a.b1,.game_server_list .g_more .btn a.b1{ background:url(../images/stage/b1.jpg) -100px -323px; width:75px; color:#fff; font-weight:bold;}
+.game .btn a.b2,.game_server_list .g_more .btn a.b2{ background:url(../images/stage/b1.jpg) -62px -299px; width:52px;}
+.game .btn a.b3,.game_server_list .g_more .btn a.b3{ background:url(../images/stage/b1.jpg) 0 -299px; width:62px;}
+.game .kf{ width:202px; height:30px; line-height:30px; background:url(../images/stage/b1.jpg) -420px -54px; position:absolute; bottom:58px; right:15px; padding:0 10px;}
+.game .kf a.new{ display:inline-block; padding-right:28px; background:url(../images/stage/i1.png) no-repeat right -475px;}
+.game .kf span{ float:right; color:#ec550b;}
+
+/*其他游戏*/
+.game_server_list{float:right; width:718px; border:1px solid #adc8eb; margin-top:10px;background:#f4f9ff url(../images/stage/c10.png) repeat-x 0 0; overflow:auto;}
+.game_server_list .bor{ border:1px solid #fff; border-top:none;overflow:auto; padding:16px 0 16px 12px; width:704px;}
+.game_server_list h3{ height:30px; line-height:30px; background:url(../images/stage/i1.png) no-repeat 10px 8px; border-left:1px solid #fff;border-right:1px solid #fff; padding-left:30px;}
+.game_server_list .games{ float:left; width:152px; position:relative; z-index:1000;}
+.game_server_list .games li{ width:150px; height:77px; background:#e6f0fc; border:1px solid #cedff5; text-align:center; margin-bottom:8px;padding-top:5px;padding-bottom: 5px;}
+.game_server_list .games li.on{ background:#fff; border-right:1px solid #fff;}
+.game_server_list .games li img{ padding:1px; border:1px solid #b9b9b9;}
+.game_server_list .games li.on img{border:1px solid #F6821B}
+.game_server_list .g_more{ float:left; width:490px; border:1px solid #cedff5; background:#fff; margin-left:-1px; padding:25px;min-height: 1000px;}
+.game_server_list .g_more .about{ font-weight: bold; padding:10px 0 10px;}
+.game_server_list .g_more .about em,.g_list .g_more .about span{ font-weight:normal; padding-right:20px; }
+.game_server_list .g_more .about em{color:#ec550b;}
+.game_server_list .g_more h2{ display:inline; color:#ec550b; font-weight:normal;}
+.game_server_list h5{ border-bottom:1px solid #d7e0eb; color:#445870; background:url(../images/stage/i1.png) no-repeat 2px 8px; padding-left:18px; line-height:30px;}
+.game_server_list .g_more ul{ overflow:hidden;width:490px; padding:15px 0 10px}
+.game_server_list .g_more li{ width:202px; height:30px; line-height:30px; background:url(../images/stage/b1.jpg) -420px -54px;padding:0 10px; float:left; margin-right:22px; margin-bottom:10px;}
+.game_server_list .g_more li a.new{ display:inline-block; padding-right:28px; background:url(../images/stage/i1.png) no-repeat right -475px;}
+.game_server_list .g_more li span{ float:right; color:#ec550b;}
+.game_server_list .g_more .btn{ height:40px;}
+.game_server_list .g_more .all .ban a{background: url("../images/stage/b1.jpg") repeat scroll 0 -299px transparent;width: 62px;color: #464646;display: block;float: left;height: 22px;line-height: 22px;margin-left: 5px;margin-top: 5px;text-align: center;}
+.game_server_list .g_more .all .ban a.on{background: url("../images/stage/b1.jpg") repeat scroll -100px -323px transparent;color: #FFFFFF;font-weight: bold;width:75px;}
+
+
+/*新手卡*/
+.xsk{float:right; width:678px;}
+.xsk h3{ height:30px; line-height:30px; background:url(../images/stage/i1.png) no-repeat 10px 8px; border-left:1px solid #fff;border-right:1px solid #fff; padding-left:30px;}
+.xsk .bor{ border:1px solid #fff; width:678px; }
+.xsk table{ width:100%; border:1px solid #cedff5;}
+.xsk th{ line-height:33px; font-weight:normal; background:url(../images/stage/c13.png); border-right:1px solid #cedff5; }
+.xsk th.cl{ border-right:none;}
+.xsk td{ background:#ffffff; border-bottom:1px dotted #bccce0; text-align:center; padding:10px 0;}
+.xsk td img{ padding:1px; border:1px solid #b9b9b9;}
+.xsk td span{color:#ec550b;}
+.xsk td a.get{ display:inline-block; background:url(../images/stage/b1.jpg) -120px -268px; width:80px; height:29px; color:#fff; font-weight:bold; line-height:29px;}
+.xsk td a.get:hover{ text-decoration:none;}
+
+/*资讯中心*/
+.main .news{float:right; width:718px; border:1px solid #adc8eb;background:#fff url(../images/stage/c10.png) repeat-x 0 0;}
+.main .news h3{ height:30px; line-height:30px; background:url(../images/stage/i1.png) no-repeat 10px 8px; border-left:1px solid #fff;border-right:1px solid #fff; padding-left:30px;}
+.main .news .bor{ border:1px solid #fff; width:686px; padding:15px 15px 50px;min-height: 750px;}
+.main .news .ban{ border-bottom:1px solid #bcd3ef; height:30px; line-height:30px; margin-bottom:20px;position:relative;}
+.main .news .ban h5{ font-weight:normal; position:absolute; left:0; top:0; height:31px;}
+.main .news .ban a{ padding:0 20px; border:1px solid #bcd3ef; border-bottom:none; line-height:29px; height:29px; display:block; margin-right:3px; float:left; background:#ebf3fc;}
+.main .news .ban a:hover{ text-decoration:none;}
+.main .news .ban a.on{ background:#fff; height:30px;font-weight:bold;}
+.main .news ul{ padding:0 10px;}
+.main .news li{ line-height:30px; height:30px; border-bottom:1px dotted #bccadc; overflow:hidden; padding-left:20px; background:url(../images/stage/i1.png) no-repeat 2px 9px;}
+.main .news li span{ float:right; color:#6f88a6;}
+.main .news .pages{padding-top:40px;text-align:center;}
+.main .news .pages a{display:inline-block; margin-right:5px;line-height:18px; padding:2px 5px; border:1px solid #136974; background:#4478be; color:#bff4fb;}
+.main .news .pages a:hover{text-decoration:none;color:#fff;}
+.main .news .pages strong{ display:inline-block; margin-right:5px;line-height:18px; padding:2px 5px;color:#f52307;}
+.main .news .pages .pagecurrent {background: none repeat scroll 0 0 #F8F8F8;border: 1px solid #136974;color: #136974;text-decoration: none;}
+
+
+/*资讯中心详细页*/
+.main .news h1.title_new{ font:24px/50px 微软雅黑,黑体; color:#f57716; text-align:center;}
+.main .news .date{ text-align:center; color:#6f88a6; line-height:36px; border-bottom:1px dotted #bccadc; margin-bottom:10px;}
+.main .news .txt{ width:650px; margin:auto; overflow:hidden;}
+.main .news .txt p{ margin:1em 0;}
+.main .news .txt strong{ color:#f57716;}

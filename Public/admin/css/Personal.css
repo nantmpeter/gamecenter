@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+.Personal-con{ width:991px; margin:10px auto;  }
+
+.Personal-l{ width:223px;float:left ;}/* ---内容区左边---*/
+     .basic{ width:221px; height:240px; border:1px solid #ddd; background:#F7F7F7}
+	 .basic ul{ padding:15px 0 0 15px; text-align:left; line-height:25px;}
+	 .basic ul li dl{ width:180px; height:55px;}
+	 .basic ul li dl dt{ float:left; width:50px; height:50px;}
+	 .basic ul li dl dd{ width:110px; text-align:left; float:right; margin-top:12px; line-height:12px}
+	 
+	 .basic ul span{ font-family:Arial; font-size:20px; font-weight:bold ; color:#EB5901}
+	 .basic ul li.welcome{ font-size:14px; margin:8px 0 6px 0;}
+	 .basic ul li.record{ line-height:24px; color:#888}
+     .basic ul li.balance{ margin-top:8px;}
+	 .basic ul li dd a{ color:#EB5901; text-decoration:underline; width:30px; height:14px ; display:block; float:left; }
+	 .basic ul li a{color:#EB5901; text-decoration:underline; margin-right:15px}
+	
+	 
+     .function ul#menu{ width:221px;  border:1px solid #ddd; margin-top:10px;} 
+         ul#menu a {display: block;text-decoration: none;	}
+         ul#menu li a {color:#333; padding:0.7em;background:url(../images/Ziye-bj.gif) no-repeat -5px -2px;border-bottom:1px solid #ddd; text-align:left;padding-left:36px}
+         ul#menu li ul li a {color: #000;padding-left:55px; background:url(../images/Ziye-bj.gif) no-repeat -50px -130px}
+         ul#menu li ul li a:hover {background: #Fff; color:#E95701; background:url(../images/Ziye-bj.gif) no-repeat 180px -41px; text-decoration:underline}
+
+.Personal-r{ width:758px; float:right}/* ---内容区右边---*/
+    .played{ width:756px; height:195px; border:1px solid #ddd}
+     h3{ background:url(../images/con-bj.gif) repeat-x -10px -269px; padding-left:15px;height:31px; font-size:13px; line-height:31px;text-align:left}
+	 h3 a{ float:right;width:40px; height:30px; display:block; background:url(../images/con-bj.gif) no-repeat 00px 12px;} 
+	 h3 span{ float:left}
+
+	.played h3 p{float:left;width:99px;height:27px;font-size:12px;font-weight: normal;line-height:29px;text-align:center; cursor:pointer ; margin-top:4px; font-weight:bold;}
+    .played h3 p.hover{width:99px;height:27px; background:url(../images/btn-c1.jpg) no-repeat;display: block; color:#fff;}
+		 
+    .played-con{ padding:15px;}
+    .played-con dl{ width:240px; height:134px; float:left}
+    .played-con dl dt{ width:124px; height:124px;border:1px solid #ddd; padding:4px ; float:left;} 
+	.played-con dl dd{ float:left; width:94px; line-height:24px; height:24px; text-align:left; padding-left:12px; border-bottom:1px solid #ccc}
+	.played-con dl dd.title{ border-bottom:1px solid #ccc; font-weight:bold; color:#FF6600; margin:0px 0 5px 0}
+.played-con dl dd.title a{ text-decoration:underline; font-weight:normal; color:#FF6600}
+	.played-con dl dd a:hover{ text-decoration:underline}
+	.played-con dl dd.btn,.played-con dl dd.btn2{ border:none}
+	.played-con dl dd.btn a{ width:67px; height:23px; display:block; background:url(../images/con-bj.gif) no-repeat -762px -5px; margin-top:5px}
+	.played-con dl dd.btn2 a{ width:67px; height:23px; display:block;margin-top:5px; color:#333;line-height:20px; color:#f60; font-weight:bold; text-decoration:underline}
+	
+	
+    
+	
+.service-list{ width:756px ; height:282px;border:1px solid #ddd; margin-top:10px;}
+.service-list1{ width:756px ; height:282px;border:1px solid #ddd; margin-top:0px;}
+	.detailed{ padding:15px; }
+	   .classified{width:710px;}
+	   .classified ul{ width:710px; background:#F5F5F5 ; border-bottom:1px solid #ddd; height:25px; line-height:25px; padding: 0 14px 0 0 }
+	   .classified ul li{ float:left;width:120px }
+	
+	   .detailed-con li{ width:711px; height:24px; line-height:24px; background:#F0F0F0; margin-top:9px;padding: 0 14px 0 0}
+	   .detailed-con li dt{float:left;width:91px; margin-right:10px; background:#EE5800; color:#fff; padding-left:9px; height:23px; text-align:left;  }
+	   .detailed-con li dd{ float:left; width:120px }
+	   .detailed-con li dd a{}
+	   .detailed-con li dd.special{ float:right; width:100px; text-align:right}
+
+.interest{ width:756px; height:312px;border:1px solid #ddd; margin-top:10px; }
+.interest .hot-con{ width:743px; padding:15px 0 0 15px;}	
+.interest .hot-con dl{ margin-right:20px;width:225px;} 
+ 
+.interest .hot-con dt img{ width:211px; height:78px;}
+.commodity{width:756px ; height:219px;border:1px solid #ddd; margin-top:10px;}
+    .comm-con{ padding:15px;}
+	.comm-con dl{ width:112px; height:160px; float:left; margin-right:10px;}
+	.comm-con dt{ width:110px; height:110px; border:1px solid #ddd }
+	.comm-con dd{ padding-top:8px;}
+	.comm-con dd.Price{ font-weight:bold; color:#FF6600}
+	
+	
+	
+/* ---个人信息页面---*/
+.played-01{ width:696px; height:800px; border:1px solid #ddd; float:right; padding:30px}
+.played-01 .title{ line-height:37px; border-bottom:1px solid #ccc;  text-align:left; height:37px; width:674px; display:block; padding:0 8px 0 8px; margin-bottom:5px}
+.played-01 .title span{ float:left; font-family:"微软雅黑"; font-size:18px}
+.played-01 .title a{ float:right; color:#E95701; line-height:24px; padding-top:10px}
+.played-01 .title a:hover{text-decoration:underline}
+
+.played-01 form{height:620px; width:600px; float:left}
+.played-01 ul{ float:left; height:620px; width:600px}
+.played-01 ul li{ width:675px; text-align:left; height:24px; margin-bottom:20px; line-height:24px} 
+.played-01 ul li span.Start{ width:76px; height:24px; display:block; float:left; text-align:right; margin-right:5px}
+.played-01 ul li .input{ width:155px; height:22px; border:1px solid #ccc; padding:2px 0 0px 5px; line-height; line-height:24px}
+.played-01 ul li .Gender{ width:20px;  height:22px; border:none}
+.played-01 ul li.btn{ padding-left:86px; padding-top:20px; width:590px} 
+.played-01 ul li.btn input{float:left;width:152px;height:37px;border:none; background:url(../images/Per-btn-0.gif) no-repeat ;cursor:pointer;}
+
+
+.played-01 ul li .Per-con{ float:left; width:160px}
+.played-01 ul li .cont_1{ float:right}
+.played-01 ul li select{ width:80px; height:26px;}
+.played-01 ul li .Ast{ color:#FF0000; text-align:left; margin-left:10px; width:10px;}
+
+.Int01{ width:670px; height:120px;float:left; text-align:left; border-top:1px solid #ccc; line-height:30px; padding:10px 0 0 10px}
+
+.played-01 p{ text-align:left}
+.played-01 p img{ margin:20px 0 50px 0;width:200px;height:200px}
+
+.Per-list{width:670px;  height:30px;}
+.Per-list ul{ width:670px;  height:30px; background:#E95700}
+.Per-list ul li{ float:left; color:#fff; width:70px;  line-height:30px; padding-left:33px; text-align:center}
+
+.Per-list-con dl{ width:670px; height:28px; background:#ddd; margin-top:15px; line-height:28px}
+.Per-list-con dl dt{ width:149px; float:left; background:#bbb}
+.Per-list-con dl dd{ float:left; width:104px;}
+.Per-list-con .Flip{ width:670px; height:50px; line-height:50px; border-top:1px solid #ddd; margin-top:20px}
+
+.Per-list-con01 dl{ width:670px; height:28px; background:#ddd; margin-top:15px; line-height:28px}
+.Per-list-con01 dl dt{ width:149px; float:left; background:#bbb; margin-right:26px;}
+.Per-list-con01 dl dd{ float:left; width:150px;}
+.Per-list-con01 .Flip{ width:670px; height:50px; line-height:50px; border-top:1px solid #ddd; margin-top:20px}
+
+.played-01 ul.Integral{ margin-top:20px}
+.played-01 ul.Integral li{ line-height:30px; height:30px;margin-bottom:0px; }
+.table_form{ text-align:left;}

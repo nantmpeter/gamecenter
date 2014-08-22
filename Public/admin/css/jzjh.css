@@ -1,0 +1,21 @@
+@charset "gb2312";
+/* CSS Document */
+#content_3{ width:989px; float:left; margin-bottom:20px; padding-bottom:59px; border:1px solid #cbcbcb; background:url(../images/index_37.jpg) repeat-x;}
+#fcm_1{ width:989px; height:34px; line-height:34px; color:#f5990a; font-weight:bold;}
+#fcm_1 li{ cursor:pointer;display:block; color:#f5990a; padding:0px 26px 0 26px; border-right:1px solid #ccc; float:left;}
+#fcm_1 li:hover{ background:url(../images/index_38.jpg) no-repeat center bottom;}
+#fcm_1 li.hover{ background:url(../images/index_38.jpg) no-repeat center bottom;}
+#fcm_2{ width:971px; padding:4px 9px 0 9px;}
+#fcm_2_left11{ width:603px; line-height:26px; float:left;}
+#fcm_2_right{ width:257px; float:right;}
+
+
+
+
+#fcm_2_left11{
+display: none;
+}
+#fcm_2_left11.block{
+display: block;
+
+

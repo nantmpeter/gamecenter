@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="http://lib.sinaapp.com/js/bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://lib.sinaapp.com/js/bootstrap/2.2.1/js/bootstrap.min.js"></script>
+  <div class="container">
+    <switch name="data.order_status" >
+
+	<case value="0,0,0">
+	<div class="alert alert-info">
+            此订单{$data.remark} 如果您已经付款,请2分钟后刷新页面重试..
+    </div>
+	</case>
+	<case value="1,1,1">
+	<div class="alert alert-error">
+	{$data.remark} 可能充值失败.或者正在充值中.请你2分钟后刷新页面重试..
+    </div>
+	</case>
+	<case value="2,2,2">
+    <div class="alert alert-success">
+    {$data.remark}
+    </div>
+	</case>
+	<default />
+	<div class="alert alert-info">
+            此订单{$data.remark} 如果您已经付款,请2分钟后刷新页面重试..
+    </div>
+	</switch>
+	<blockquote>
+	  <p>订单:{$data.orderid} 详细信息如下</p>
+	</blockquote>
+  <table class="table table-condensed table-hover">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th class="topic">话题</th>
+            <th class="category">分类</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>充值到:</td>
+            <td>充值的游戏:</td>
+         
+           
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>充值的游戏:</td>
+            <td>悬疑魔幻</td>
+           
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>充值的服务器:</td>
+            <td>推理探案</td>
+           
+          </tr>
+           <tr>
+            <td>3</td>
+            <td>神探伽俐略</td>
+            <td>推理探案</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  </body>
+</html>

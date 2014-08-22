@@ -1,0 +1,17 @@
+@charset "gb2312";
+/* CSS Document */
+#content_3{ width:991px;margin-bottom:20px; padding-bottom:59px; float:left;}
+#fcm_2{ width:971px; padding:4px 9px 0 9px;}
+#fcm_2_left{ width:238px; height:511px; line-height:26px; float:left; border:1px solid #cacaca;background:url(../images/index_39.jpg) no-repeat 9px 38px;}
+#fcm_2_left dt{ width:228px; height:28px; font-size:14px; font-weight:bold; padding-left:8px; border:1px solid #fff; background:#ececec;}
+#fcm_2_left dd{ width:205px; height:34px; line-height:34px; padding-left:32px;font-weight:bold; border-top:1px solid #e1e1e1; }
+#fcm_2_left dd a{ color:#333;}
+#fcm_2_left dd a:hover{ color:#f5990a;}
+#fcm_2_right{ width:715px; height:501px; float:right; border:1px solid #e0e0e0; line-height:28px; padding:10px 0 0 10px;}
+
+
+
+
+
+
+

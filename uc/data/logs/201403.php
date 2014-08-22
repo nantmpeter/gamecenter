@@ -1,0 +1,20 @@
+<?PHP exit;?>	UCenterAdministrator	unknown	1394816748	login	succeed
+<?PHP exit;?>	UCenterAdministrator	unknown	1394817220	login	succeed
+<?PHP exit;?>	UCenterAdministrator	unknown	1394817335	app_add	appid=1; appname=测试
+<?PHP exit;?>	UCenterAdministrator	unknown	1394818427	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394818455	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394818482	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394818519	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394818569	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394820865	login	succeed
+<?PHP exit;?>	UCenterAdministrator	unknown	1394904129	login	succeed
+<?PHP exit;?>	UCenterAdministrator	unknown	1394904283	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394904338	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394904549	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394904578	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394904589	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394905036	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394905563	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394905594	app_edit	appid=1
+<?PHP exit;?>	UCenterAdministrator	unknown	1394906221	login	succeed
+<?PHP exit;?>	UCenterAdministrator	unknown	1394906459	app_edit	appid=1

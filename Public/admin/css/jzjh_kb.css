@@ -1,0 +1,74 @@
+@charset "gb2312";
+/* CSS Document */
+/* CSS Document */
+
+body{ margin:0px; padding:0px;  background:#FFF;  font-family:"ËÎÌו"; font-size:12px; letter-spacing:1px;}
+.topbeij{background:url(../images/d.jpg) repeat-x;height:243px; width:100%; color:#666666; margin:0 auto;}
+.huawen_bg{ height:243px; margin:0 auto;}
+ul {margin: 0px;padding: 0px;}
+li {list-style-type: none;margin: 0px;padding: 0px;}
+.fl{ float:left;}
+.fr{ float:right;}
+.cl{ clear:both;}
+.zz {margin-top: 0px;margin-right: auto;margin-bottom: 0px;	margin-left: auto;}
+.tc{ text-align:center;}
+*{ padding:0px; margin:0px;}
+.cur{cursor: pointer;}
+a img{ border:0px;}
+
+.juzhongbg{ margin:0 auto; padding:0px; background:url(../images/bg.jpg) no-repeat;}
+.top_1{ background:url(../images/c_02.jpg) no-repeat; height:245px; margin:0 auto;}
+
+.cent{ margin:0 auto; padding:0px;}
+.zuob{ float:left;}
+.youb{ width:262px; float:left;}
+.dh{ background:url(../images/a_dh_04.jpg); width:734px; height:56px;}
+.dh a{ float:left; width:119px; height:35px;}
+.aif{ padding-top:15px; padding-left:30px; float:left;}
+.aif2{ padding-top:15px; padding-left:5px; float:left;}
+.aif3{ padding-top:15px; padding-left:5px; float:left;}
+.neirong1{ width:704px; float:left; margin-left:15px; line-height:30px; display:inline;}
+.xian{ width:704px; height:1px; border-bottom:1px solid #CCC; margin:5px auto;}
+.bit_a{ color:#333; font-weight:bold;}
+.bit_b{ color:#339933; font-weight:bold; font-size:14px;}
+.tuo img{ width:703px; height:135px;}
+.tuo{ width:703px; height:135px;}
+.biti_y{ background:url(../images/c_07.jpg) no-repeat; width:250px; height:20px; font-size:14px; font-weight:bold; color:#000; padding:9px 0 0 12px;}
+.youb{ padding-top:10px;}
+.neir_y{ background:url(../images/c_29.jpg) repeat-y; width:246px; padding:13px 8px 13px 8px; }
+.foot_y{ background:url(../images/c_30.jpg) no-repeat; width:262px; height:8px; padding-bottom:5px;}
+.gao{ width:694px; float:left; height:174px; margin-top:10px; padding-top:10px; padding-bottom:8px;}
+.tubiao{ background:url(../images/dun.jpg) no-repeat; width:129px; height:163px;}
+.wenz{ width:550px; height:174px; margin-left:15px;}
+.tab_1{ width:245px;}
+.tab_1 td{ height:35px;}
+
+.tab_2{ width:245px;}
+.tab_2 td{ height:35px; line-height:14px;}
+
+
+.lianj_tab a:link, .lianj_tab a:visited{ color:#336699; text-decoration:none;}
+.lianj_tab a:hover, .lianj_tab a:active{ color:#336699; text-decoration:underline;}
+
+.wend a:link, .wend a:visited{ color:#666; text-decoration:none;}
+.wend a:hover, .wend a:active{ color:#666; text-decoration:underline;}
+.bit_b a:link, .bit_b a:visited{ color:#339933; text-decoration:underline; font-size:12px;font-weight:100;}
+.bit_b a:hover, .bit_b a:active{ color:#339933; text-decoration:none; font-size:12px; font-weight:100;}
+.yans{ color:#333;}
+
+
+.dh2{ background:url(../images/b_dh_04.jpg); width:734px; height:56px;}
+.dh2 a{ float:left; width:119px; height:35px;}.
+.zhongj{ width:704px; height:393px; text-align:center;}
+.zhongj img{ width:418px; height:393px; margin-left:150px;}
+
+.dh3{ background:url(../images/c_dh_04.jpg); height:56px;}
+.dh3 a{ float:left; width:119px; height:35px;}
+
+.foot{ text-align:center; float:left; margin-top:30px; line-height:22px;letter-spacing:0px; font-family:Arial, Helvetica, sans-serif;}
+
+
+
+
+
+

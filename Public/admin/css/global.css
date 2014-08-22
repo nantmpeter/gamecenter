@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+/* ---重置常用标签的边界与填充---*/
+body,h1,h2,h3,h4,h5,h6,p,hr,dl,dt,dd,ul,ol,li,form,input,button,textarea,img{margin:0;padding:0}
+
+/* ---设置默认字体---*/
+body{font:12px "宋体" ,Arial;text-align:center;margin:0; padding:0;color:#333; background:url(../images/top-bj.gif) repeat-x 0 -266px }
+
+/* ---重置列表元素---*/
+ul,ol,li{list-style:none;}
+input{list-style:none;}
+a img{ border:none}
+
+/* ---常用元素---*/
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both; font-size:0px; line-height:0px;margin:0;padding:0}
+.blank10px{clear:both;height:20px;display:block;line-height:20px;}
+
+/* ---超链接---*/
+a{color:#393939;text-decoration:none}
+a:hover{color:#E95701;text-decoration:none}
+/* ---重置常用标签的边界与填充结束---*/
+
+/* ---头部开始---*/
+
+	
+/* ---顶部开始---*/
+.header{width:991px;height:81px;margin:0 auto;padding-top:8px;}
+
+/* ---主导航开始---*/	
+.menu{ width:993px;height:43px; margin: 0 auto 8px}
+    .menu-l{ width:10px;height:43px; background:url(../images/top-bj.gif) no-repeat 0 0}
+    .menu-c{ width:973px; background:url(../images/top-bj.gif) repeat-x 0 -223px ;height:43px; font-size:14px ; color:#fff; font-weight:bold}
+	.menu-c li{ float:left;height:43px; line-height:43px; background:url(../images/top-bj.gif) no-repeat 0 -156px; }
+    .menu-c li a{ width:74px;height:40px; display:block;color:#fff; padding: 0 17px }
+	.menu-c li a:hover,.menu-c li a.menu-current{ background:url(../images/top-bj.gif) no-repeat 17px -100px ; color:#EE5900}
+	.menu-r{width:10px;height:43px; background:url(../images/top-bj.gif) no-repeat 0 -53px}
+
+.copyright{width:989px;height:128px; border-top:1px  solid #ddd;margin:10px auto 0; padding-top:15px;color:#888;line-height:25px;}/* ---版权---*/
+.copyright a{ color:#07379B; text-decoration:underline}
+.copyright a:hover{ color:#FF6C01; text-decoration:underline}
+.copyright span{  font-size:8px}
+.copyright span.record{ color:#07379B; text-decoration:underline; margin-left:15px;font-size:12px}
+.ta input{ width:200px; height:24px; line-height:24px; border-bottom:1px solid #b6c5d1; border-right:1px solid #b6c5d1;border-top:1px solid #787878;border-left:1px solid #787878; }
+.aniu{ background:url(../images/xiao_an.gif) no-repeat; width:86px; height:19px; text-align:center; padding-top:5px;  font-size:14px;color:#ffffff; font-weight:bold;}
+.tab3{ margin:0 auto; width:370px;}
+.tab3 td{ height:40px;}
+.wekan{ overflow:hidden;}
+.wenzrong{ width:733px; line-height:22px;}
+.wenzbg{ font-weight:bold; background:#e9f4fc; width:300px; padding:10px; font-size:14px;}

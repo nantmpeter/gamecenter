@@ -1,0 +1,202 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="off">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title><?php echo ($data["sitename"]); ?> - 后台管理中心</title>
+<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/system.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script src="__PUBLIC__/js/dialog/jquery.artDialog.js?skin=default" type="text/javascript"></script>
+<script src="__PUBLIC__/js/dialog/plugins/iframeTools.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+	var $user = "<?php echo (session('user')); ?>";
+	$('#lock').click(function(){
+		$.ajax({
+			type:'get',
+			url:"<?php echo U('public/loginout');?>",
+			data:{'c':'c'},
+			error:function(){
+				$.dialog.tips('锁屏失败,系统发生错误');
+				return false;
+			},
+			success:function(){
+				
+				return true;
+			}
+		});
+		var dialog = art.dialog({
+		    content: '<p>请输入你的登陆密码</p>'
+		    	+ '<input id="demo-labs-input" style="width:15em; padding:4px" />',
+		    fixed: true,
+		    id: 'Fm7',
+		    lock:true,
+		    opacity:'1',
+		    icon: 'question',
+		    okVal: '回答',
+		    ok: function () {
+		    	var input = document.getElementById('demo-labs-input');
+		        $.ajax({
+		        	url:"<?php echo U('public/checklogin');?>",
+		        	type:"post",
+		        	data:{'loginname':$user,'loginpwd':input.value},
+		        	cache:false,
+		        	error:function(){
+		        		$.dialog.tips('解锁失败,系统发生错误.请刷新后重新登陆.');
+		        		return false;
+		        	},
+		        	success:function(){
+		        		$.dialog.tips('解锁中.系统即将刷新..解锁失败将会为你跳转到登陆页面.');
+						setTimeout("location.reload(true)",2000);
+
+		        	}
+		        });
+		    },
+		    cancel: function(){
+		    	window.opener = null; //for Ie6
+		    	window.open("","_self");  //for ie7-8 
+		    	window.close();
+		    }
+		});
+
+		dialog.shake && dialog.shake();// 调用抖动接口
+	})
+})
+</script>
+</head>
+<body scroll="no">
+<div class="header">
+	<div class="logo lf"><a href="/admin" target="_blank"><span class="invisible"><?php echo ($data["sitename"]); ?></span></a></div>
+    <div class="rt">
+    	<div class="tab_style white cut_line text-r"><a href="javascript:;" id="lock"><img src="__PUBLIC__/images/lockscreen.png"> 锁屏</a><span>|</span><a href="http://www.31wan.cn" target="_blank">官方网站</a><span>|</span><a href="http://demo.31wan.cn/license/" target="_blank">授权</a><span>|</span><a href="http://www.31wan.cn" target="_blank">支持论坛</a><span>|</span><a href="http://www.31wan.cn" target="_blank">帮助？</a>
+        </div>
+        <div class="style_but"></div>
+    </div>
+    <div class="col-auto" style="overflow: visible">
+    	<div class="log white cut_line">您好！<?php echo (session('user')); ?>  [<?php echo (session('group')); ?>]<span>|</span><a href="<?php echo U('Public/loginout');?>">[退出]</a><span>|</span>
+    		<a href="/" target="_blank" id="site_homepage">站点首页</a><span>|</span>	
+    	</div>
+        <ul class="nav white" id="top_menu">
+        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v_list): $mod = ($i % 2 );++$i; if($v_list["fid"] != 0): ?><li id="_M<?php echo ($v_list["access_fid"]); ?>" class="top_menu"><a href="javascript:_M(<?php echo ($v_list["access_fid"]); ?>,'#');"  hidefocus="true" style="outline:none;"><?php echo ($v_list["parent_module_alias"]); ?> </a></li>
+		<?php else: ?>
+		<li id="_M<?php echo ($v_list["access_id"]); ?>" class="top_menu"><a href="javascript:_M(<?php echo ($v_list["access_id"]); ?>,'#');"  hidefocus="true" style="outline:none;"><?php echo ($v_list["module"]); ?> </a></li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+        
+        </ul>
+    </div>
+</div>
+<div id="content">
+	<div class="col-left left_menu">
+    	<div id="leftMain">
+        </div>
+        <a href="javascript:;" id="openClose" style="outline-style: none; outline-color: invert; outline-width: medium;" hideFocus="hidefocus" class="open" title="展开与关闭"><span class="hidden">展开</span></a>
+    </div>
+	<div class="col-1 lf cat-menu" id="display_center_id" style="display:none" height="100%">
+		<div class="content">
+        	<iframe name="center_frame" id="center_frame" src="#" frameborder="false" scrolling="auto" style="border:none" width="100%" height="auto" allowtransparency="true"></iframe>
+        </div>
+    </div>
+    <div class="col-auto mr8">
+        <div class="crumbs">
+            <div class="shortcut cu-span">
+                <a href="<?php echo U('Common/clear_cache');?>" target="right"><span>更新缓存</span></a>
+           </div>
+        	当前位置：<span id="current_pos">首页</span></div>
+            <div class="col-1">
+                <div class="content" style="position:relative; overflow:hidden">
+                    <iframe name="right" id="rightMain" src="<?php echo U('Main/welcome');?>" frameborder="false" scrolling="auto" style="overflow-x:hidden;border:none; margin-bottom:30px" width="100%" height="auto" allowtransparency="true"></iframe>
+                    <div class="fav-nav">
+                        <div id="panellist"></div>
+                        <div id="paneladd"><a class="panel-add" href="javascript:add_panel();"><em>添加</em></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<script type="text/javascript"> 
+//clientHeight-0; 空白值 iframe自适应高度
+function windowW(){
+	if($(window).width()<980){
+			$('.header').css('width',980+'px');
+			$('#content').css('width',980+'px');
+			$('body').attr('scroll','');
+			$('body').css('overflow','');
+	}
+}
+windowW();
+$(window).resize(function(){
+	if($(window).width()<980){
+		windowW();
+	}else{
+		$('.header').css('width','auto');
+		$('#content').css('width','auto');
+		$('body').attr('scroll','no');
+		$('body').css('overflow','hidden');
+		
+	}
+});
+window.onresize = function(){
+	var heights = document.documentElement.clientHeight-150;document.getElementById('rightMain').height = heights;
+	var openClose = $("#rightMain").height()+39;
+	$('#center_frame').height(openClose+9);
+	$("#openClose").height(openClose+30);	
+}
+window.onresize();
+//站点下拉菜单
+$(function(){
+	//默认载入左侧菜单
+	$("#leftMain").load("<?php echo U('Weight/weight_1');?>");
+})
+
+//左侧开关
+$("#openClose").click(function(){
+	if($(this).data('clicknum')==1) {
+		$("html").removeClass("on");
+		$(".left_menu").removeClass("left_menu_on");
+		$(this).removeClass("close");
+		$(this).data('clicknum', 0);
+	} else {
+		$(".left_menu").addClass("left_menu_on");
+		$(this).addClass("close");
+		$("html").addClass("on");
+		$(this).data('clicknum', 1);
+	}
+	return false;
+});
+function _M(menuid,targetUrl) {
+	$("#leftMain").load("./index.php?m=Weight&a=index2&ac="+menuid);
+//	if(menuid!=8) {
+//		$("#leftMain").load("?m=admin&c=index&a=public_menu_left&menuid="+menuid);
+//	} else {
+//		$("#leftMain").load("?m=admin&c=phpsso&a=public_menu_left&menuid="+menuid);
+//	}
+	
+	//$("#rightMain").attr('src', targetUrl);
+	$('.top_menu').removeClass("on");
+	$('#_M'+menuid).addClass("on");
+//	$.get("?m=admin&c=index&a=public_current_pos&menuid="+menuid, function(data){
+//		$("#current_pos").html(data);
+//	});
+	//当点击顶部菜单后，隐藏中间的框架
+	$('#display_center_id').css('display','none');
+	//显示左侧菜单，当点击顶部时，展开左侧
+	$(".left_menu").removeClass("left_menu_on");
+	$("#openClose").removeClass("close");
+	$("html").removeClass("on");
+//	$("#openClose").data('clicknum', 0);
+//	$("#current_pos").data('clicknum', 1);
+}
+function _MP(menuid,targetUrl) {
+	$("#rightMain").attr('src', targetUrl);
+	$('.sub_menu').removeClass("on fb blue");
+	$('#_MP'+menuid).addClass("on fb blue");
+	/*$.get("current_pos_"+menuid+".html", function(data){
+		$("#current_pos").html(data+'<span id="current_pos_attr"></span>');
+	});
+	$("#current_pos").data('clicknum', 1);
+	*/
+}
+
+</script>
+</body>
+</html>

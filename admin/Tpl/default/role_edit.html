@@ -1,0 +1,128 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<title>31wan - 后台管理中心</title>
+   <link href="http://lib.sinaapp.com/js/bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://lib.sinaapp.com/js/bootstrap/2.2.1/js/bootstrap.min.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script src="__PUBLIC__/js/dialog/jquery.artDialog.js?skin=idialog" type="text/javascript"></script>
+<script src="http://www.phpletter.com/contents/ajaxfileupload/ajaxfileupload.js" type="text/javascript"></script>
+<script src="__PUBLIC__/js/dialog/plugins/iframeTools.js" type="text/javascript"></script>
+<link href="__PUBLIC__/admin/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/zh-cn-system.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/table_form.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles1.css" title="styles1" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles2.css" title="styles2" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles3.css" title="styles3" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles4.css" title="styles4" media="screen">
+</head>
+<body>
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style>
+<script>
+</script>
+
+<div class="pad-10">
+<div class="col-tab">
+
+<div id="div_setting_1" class="contentList pad-10" style="">
+<form action="{:U('Global/role_edit')}" method="post" id="myform" >
+<table class="table_form contentWrap" width="100%">
+<tbody><tr>
+<td>角色名称</td> 
+<td><input name="rolename" value="{$info.rolename}" class="input-text" disabled="disabled" id="rolename" type="text"></td>
+</tr>
+<tr>
+<td>角色描述</td>
+<td><textarea name="description" rows="2" cols="20" id="description" class="inputtext" style="height:100px;width:500px;">{$info.description}</textarea></td>
+</tr>
+<tr>
+<td>是否启用</td>
+<td><input name="disabled" value="0" type="radio"<eq name="info.disabled" value="0">checked</eq> > 启用  <input name="disabled" value="1" type="radio"<eq name="info.disabled" value="1">checked</eq>>禁止</td>
+</tr>
+</tbody></table>
+</div>
+<div class="bk15"></div>
+<input value="{$roleid}" name="roleid" type="hidden">
+<input name="dosubmit" type="submit" value="提交" class="button">
+</form>
+</div>
+
+
+
+
+
+
+<!--  <form method="post" action="{:U('public/save_flag')}"> 
+<table class="table table-bordered table-striped">
+            <colgroup>
+              <col class="span2">
+              <col class="span4">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>栏目</th>
+                <th>子栏目</th>
+              </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+              <tr>
+                <td class="inner">
+                  <code data="{$vo.module_alias}" id="{$vo.id}" class="code" >{$vo.category}</code><input type="checkbox" value="{$vo.module_alias}" name="access[]" />
+                </td>
+                <td class="{$vo.module_alias}"></td>
+              </tr>
+            </volist>
+            </tbody>
+          </table>
+<input value="{$roleid}" name="role_id" id="role_id" type="hidden">
+          <input type="submit" class="btn" value="提交" /> 
+          <input type="button" class="btn btn-danger" value="清除此用户组的权限" /> 
+          </form>  -->
+</body>
+<script>
+$(document).ready(function(){
+	$('.code').click(function(){
+		var id = $(this).attr('id');
+		var name = $(this).attr('data');
+		$.ajax({
+			data:{'id':id},
+			url:"{:U('Public/get_option')}",
+			type:'get',
+			success:function(data){
+				 $('.'+name).html(data);
+			}
+		})
+	})
+	$('.btn-danger').click(function(){
+		var $sid = "{$.Think.session.user}";
+		var $id = $('#role_id').val();
+		if($id!=""){
+			if($id>$sid){
+				$.dialog.tips('发生错误,不能修改超级管理员组的权限');
+				return false;
+			}else{
+				$.ajax({
+					url:"{:U('Public/clear_flag')}",
+					data:{'time':'22554465','ps':$id},
+					type:'get',
+					dataType:'json',
+					success:function(data){
+						$.dialog.tips(data.msg);
+					},
+					error:function(){
+						$.dialog.tips('系统发生错误');
+					}
+				})
+			}
+		}else{
+			$.dialog.tips('系统发生错误，请刷新');
+			return false;
+		}
+	})
+})
+</script>
+</html>

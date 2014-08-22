@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>31wan商业授权查询</title>
+<style type="text/css">
+<!--
+body{ background:#fff; text-align:center; font-size:12px;}
+a { color:#333; text-decoration:none;}
+#cert{background:#fff url(http://demo.31wan.cn/app/Tpl/default/images/license_bg.jpg) no-repeat 0 0; width:632px; height:396px; margin:50px auto; position:relative;}
+#cert table{ position:absolute; left:160px; top:130px;}
+#cert table th{ height:30px; line-height:30px; text-align:right; padding-right:10px; font-weight:normal; color:#000;}
+#cert table td{ text-align:left; color:#333;}
+-->
+</style>
+</head>
+<body>
+<div id="cert">
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <th>授权类型：</th>
+      <td><switch name="info.type" >
+			<case value="1">基础版</case>
+			<case value="2">至尊版</case>
+			<case value="3">钻石版</case>
+			<case value="4">黄金版</case>
+			</switch></td>
+    </tr>
+    <tr>
+      <th>授权域名：</th>
+      <td><a target="blank" href="http://www.{$info.domain}">{$info.domain}</a></td>
+    </tr>
+    <tr>
+      <th>网站名称：</th>
+      <td>{$info.web_title}</td>
+    </tr>
+    <tr>
+      <th>授权持有人：</th>
+      <td>{$info.remark}</td>
+    </tr>
+    <tr>
+      <th>授权起始时间：</th>
+      <td>{$info.add_time|date="y-m-d",###}[终身授权]</td>
+    </tr>
+    <tr>
+      <th>技术支持时间：</th>
+      <td>一年</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

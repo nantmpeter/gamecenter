@@ -1,0 +1,672 @@
+[ 2014-08-08T22:33:16+08:00 ] ERR: (ThinkException) 缓存文件写入失败！:./app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php
+[ 2014-08-08T22:33:16+08:00 ] 0.0.0.0 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.008482s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000980s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000284s ]
+NOTIC: [8] Undefined index: aid /Users/peter/svnali/game/public/app/Lib/Action/PublicAction.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.006626s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.004779s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.001937s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( url = '/index' )  [ RunTime:0.000321s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001578s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001736s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [2] file_put_contents(./app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php): failed to open stream: Permission denied /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 122 行.
+NOTIC: [8] Array to string conversion /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Array to string conversion /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: file /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index: line /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index: class /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: class /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index: type /Users/peter/svnali/game/public/sys/system/Lib/Core/ThinkException.class.php 第 63 行.
+
+[ 2014-08-08T22:34:00+08:00 ] 0.0.0.0 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.001603s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: aid /Users/peter/svnali/game/public/app/Lib/Action/PublicAction.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.001302s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.002135s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000600s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( url = '/index' )  [ RunTime:0.000412s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001021s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001199s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 5 行.
+NOTIC: [8] Undefined index: HOST /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 92 行.
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.001717s ]
+SQL: SELECT * FROM `mygame_game`  [ RunTime:0.000291s ]
+INFO: Run ParseTemplate Behavior [ RunTime:0.024785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024950s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000921s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000832s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000636s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003616s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001326s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `mygame_server` [ RunTime:0.003784s ]
+SQL: SELECT server.sid AS sid,server.servername AS servername,server.start_time AS start_time,server.server_url AS server_url,server.status AS status,game.gid AS gid,game.sort AS sort,game.gamename AS gamename,game.tag AS tag,game.desc1 AS desc1,game.gamepic AS gamepic,game.game_web AS game_web,game.gametype AS gametype FROM mygame_server server LEFT JOIN mygame_game game ON game.gid=server.gid WHERE ( server.is_display = '0' ) ORDER BY server.start_time desc  [ RunTime:0.002581s ]
+SQL: SHOW COLUMNS FROM `mygame_gametype` [ RunTime:0.005464s ]
+SQL: SELECT game.gid AS gid,game.game_starttime AS game_starttime,game.sort AS sort,game.gamename AS gamename,game.ishot AS ishot,game.tag AS tag,game.gametype AS gametype,game.gamepic AS gamepic,game.content AS content,game.desc1 AS desc1,game.game_web AS game_web,game.game_bbs AS game_bbs,game.game_guide AS game_guide,game.card AS card,game.isdisplay AS isdisplay,game.game_hit AS game_hit,gametype.id AS id,gametype.typename AS typename FROM mygame_game game  JOIN mygame_gametype gametype ON game.gametype=gametype.id WHERE ( game.isdisplay = '0' ) ORDER BY game.sort asc LIMIT 8   [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `mygame_ad` [ RunTime:0.003529s ]
+SQL: SELECT * FROM `mygame_ad` WHERE ( type =2 and status =0  ) ORDER BY addtime desc LIMIT 3   [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `mygame_article` [ RunTime:0.003337s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( `typeid` = 9 ) AND ( `status` = 0 ) ORDER BY addtime desc LIMIT 5   [ RunTime:0.003988s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( `typeid` = 9 ) AND ( `status` = 0 ) AND ( `istop` = 1 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.002013s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( `typeid` = 7 ) AND ( `status` = 0 ) ORDER BY addtime desc LIMIT 5   [ RunTime:0.001255s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( `typeid` = 7 ) AND ( `status` = 0 ) AND ( `istop` = 1 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.000795s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( `typeid` = 8 ) AND ( `status` = 0 ) ORDER BY addtime desc LIMIT 5   [ RunTime:0.000916s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( `typeid` = 8 ) AND ( `status` = 0 ) AND ( `istop` = 1 ) ORDER BY addtime desc LIMIT 1   [ RunTime:0.000327s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000047s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.073806s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./app/Tpl/Public/head.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [2] file_get_contents(./app/Tpl/Public/footer.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/461cfa45d4e8071bae28ea45c31fe3ca.php 第 34 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/461cfa45d4e8071bae28ea45c31fe3ca.php 第 36 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/461cfa45d4e8071bae28ea45c31fe3ca.php 第 37 行.
+NOTIC: [8] Undefined variable: history /Users/peter/svnali/game/public/app/Runtime/Cache/461cfa45d4e8071bae28ea45c31fe3ca.php 第 41 行.
+NOTIC: [8] Undefined variable: no_history /Users/peter/svnali/game/public/app/Runtime/Cache/461cfa45d4e8071bae28ea45c31fe3ca.php 第 42 行.
+SQL: SELECT server.sid AS sid,server.servername AS servername,server.start_time AS start_time,server.server_url AS server_url,server.status AS status,game.gid AS gid,game.sort AS sort,game.gamename AS gamename,game.tag AS tag,game.desc1 AS desc1,game.gamepic AS gamepic,game.game_web AS game_web,game.gametype AS gametype FROM mygame_server server LEFT JOIN mygame_game game ON game.gid=server.gid ORDER BY server.start_time desc LIMIT 5   [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `mygame_article` [ RunTime:0.002114s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( typeid=10 ) LIMIT 6   [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `mygame_link` [ RunTime:0.004039s ]
+SQL: SELECT * FROM `mygame_link` WHERE ( passed =1  ) ORDER BY listorder asc  [ RunTime:0.000696s ]
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/461cfa45d4e8071bae28ea45c31fe3ca.php 第 157 行.
+NOTIC: [8] Use of undefined constant THEME - assumed 'THEME' /Users/peter/svnali/game/public/app/Runtime/Cache/461cfa45d4e8071bae28ea45c31fe3ca.php 第 205 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.057369s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.048941s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000191s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000090s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000020s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.102970s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000103s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.102076s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000463s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000057s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.135682s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006249s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.110981s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000132s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000134s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.113820s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000101s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.113129s ]
+
+[ 2014-08-08T22:34:07+08:00 ] 0.0.0.0 /hall/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001656s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.003412s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.002698s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.002089s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `mygame_game_log` [ RunTime:0.012608s ]
+SQL: SHOW COLUMNS FROM `mygame_server` [ RunTime:0.002767s ]
+SQL: SELECT game_log.username AS username,game_log.logintime AS logintime,server.sid AS sid,server.servername AS servername,game.gid AS gid,game.gamename AS gamename FROM mygame_game_log game_log  JOIN mygame_server server ON server.sid=game_log.sid  JOIN mygame_game game ON game.gid=game_log.gid WHERE ( game_log.username = null ) ORDER BY game_log.logintime desc LIMIT 3   [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `mygame_gametype` [ RunTime:0.003086s ]
+SQL: SELECT server.sid AS sid,server.servername AS servername,server.start_time AS start_time,server.server_url AS server_url,server.status AS status,game.gid AS gid,game.sort AS sort,game.gamename AS gamename,game.tag AS tag,game.desc1 AS desc1,game.gamepic AS gamepic,game.game_web AS game_web,game.gametype AS gametype FROM mygame_server server LEFT JOIN mygame_game game ON game.gid=server.gid WHERE ( game.ishot=0 ) ORDER BY game.sort desc,server.add_time desc LIMIT 1   [ RunTime:0.002362s ]
+SQL: SELECT * FROM `mygame_gametype` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: aid /Users/peter/svnali/game/public/app/Lib/Action/PublicAction.class.php 第 44 行.
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000331s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000350s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( url = '/hall' )  [ RunTime:0.000185s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000130s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 5 行.
+NOTIC: [8] Undefined index: HOST /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 92 行.
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.003786s ]
+SQL: SELECT * FROM `mygame_game`  [ RunTime:0.000339s ]
+INFO: Run ParseTemplate Behavior [ RunTime:0.014137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014234s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000229s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000174s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000090s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000162s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000248s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000035s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.015864s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./app/Tpl/Public/head.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [2] file_get_contents(./app/Tpl/Public/footer.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/d048b2701b9e0aa0e6c49945ea9dc922.php 第 35 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/d048b2701b9e0aa0e6c49945ea9dc922.php 第 37 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/d048b2701b9e0aa0e6c49945ea9dc922.php 第 38 行.
+SQL: SELECT server.sid AS sid,server.servername AS servername,server.start_time AS start_time,server.server_url AS server_url,server.status AS status,game.gid AS gid,game.sort AS sort,game.gamename AS gamename,game.tag AS tag,game.desc1 AS desc1,game.gamepic AS gamepic,game.game_web AS game_web,game.gametype AS gametype FROM mygame_server server LEFT JOIN mygame_game game ON game.gid=server.gid ORDER BY server.start_time desc LIMIT 8   [ RunTime:0.000515s ]
+SQL: SELECT * FROM `mygame_game`  [ RunTime:0.000438s ]
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/d048b2701b9e0aa0e6c49945ea9dc922.php 第 133 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/d048b2701b9e0aa0e6c49945ea9dc922.php 第 286 行.
+NOTIC: [8] Use of undefined constant THEME - assumed 'THEME' /Users/peter/svnali/game/public/app/Runtime/Cache/d048b2701b9e0aa0e6c49945ea9dc922.php 第 334 行.
+NOTIC: [8] Undefined variable: ad_list /Users/peter/svnali/game/public/app/Runtime/Cache/d048b2701b9e0aa0e6c49945ea9dc922.php 第 349 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.030584s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001801s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000133s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000084s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000018s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.031535s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000100s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.032074s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000424s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000031s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.050280s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.002573s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.036180s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000087s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000018s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.037986s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000061s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.038271s ]
+
+[ 2014-08-08T22:34:08+08:00 ] 0.0.0.0 /hall/server_info?_=1407508448054&%20gid=9
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000286s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.002395s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000909s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.003932s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.002783s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `mygame_server` [ RunTime:0.002798s ]
+SQL: SHOW COLUMNS FROM `mygame_gametype` [ RunTime:0.006298s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( gid = 9 )  [ RunTime:0.000701s ]
+SQL: SELECT `typename` FROM `mygame_gametype` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SELECT * FROM `mygame_server` WHERE ( gid=9 ) ORDER BY sid desc  [ RunTime:0.000588s ]
+
+[ 2014-08-08T22:34:09+08:00 ] 0.0.0.0 /members/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000302s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.003719s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000405s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+NOTIC: [8] Undefined variable: _SESSION /Users/peter/svnali/game/public/admin/Lib/ORG/Util/RBAC.class.php 第 177 行.
+SQL: select node.id,node.name from  as role, as user, as access , as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000894s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as role, as user, as access , as node where user.user_id='' and user.role_id=rol' at line 1
+ [ SQL语句 ] : select node.id,node.name from  as role, as user, as access , as node where user.user_id='' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1
+NOTIC: [2] Invalid argument supplied for foreach() /Users/peter/svnali/game/public/admin/Lib/ORG/Util/RBAC.class.php 第 224 行.
+NOTIC: [8] Undefined index: authId /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 99 行.
+
+[ 2014-08-08T22:34:09+08:00 ] 0.0.0.0 /accounts/login?url=http://localhost:4000/members/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000190s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.002614s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.002753s ]
+NOTIC: [8] Undefined index: server /Users/peter/svnali/game/public/app/Lib/Action/AccountsAction.class.php 第 488 行.
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.002545s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000444s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000276s ]
+NOTIC: [8] Undefined index: aid /Users/peter/svnali/game/public/app/Lib/Action/PublicAction.class.php 第 44 行.
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000437s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000422s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( url = '/accounts' )  [ RunTime:0.000228s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000148s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000250s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 5 行.
+NOTIC: [8] Undefined index: HOST /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 92 行.
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.004379s ]
+SQL: SELECT * FROM `mygame_game`  [ RunTime:0.000480s ]
+INFO: Run ParseTemplate Behavior [ RunTime:0.016933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017027s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000180s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000127s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000065s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000247s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000394s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.018684s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./app/Tpl/Public/head.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [2] file_get_contents(./app/Tpl/Public/footer.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.006664s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001859s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000225s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000204s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008009s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000122s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.008968s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000374s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000041s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.029518s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.002038s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.012665s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000158s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000135s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000034s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014172s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000098s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.014901s ]
+
+[ 2014-08-08T22:34:11+08:00 ] 0.0.0.0 /article/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.014811s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000780s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.001572s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `mygame_article` [ RunTime:0.002652s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mygame_category category  JOIN mygame_article article ON category.typeid=article.typeid WHERE ( article.status = '0' ) LIMIT 1   [ RunTime:0.001686s ]
+SQL: SELECT category.typename AS typename,article.aid AS aid,article.title AS title,article.typeid AS typeid,article.titlecorlor AS titlecorlor,article.addtime AS addtime,article.status AS status FROM mygame_category category  JOIN mygame_article article ON category.typeid=article.typeid WHERE ( article.status = '0' ) ORDER BY article.addtime desc LIMIT 0,30   [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.002627s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000616s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000556s ]
+NOTIC: [8] Undefined index: aid /Users/peter/svnali/game/public/app/Lib/Action/PublicAction.class.php 第 44 行.
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000915s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000577s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( url = '/article' )  [ RunTime:0.000336s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000130s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 5 行.
+NOTIC: [8] Undefined index: HOST /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 92 行.
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.003889s ]
+SQL: SELECT * FROM `mygame_game`  [ RunTime:0.000889s ]
+INFO: Run ParseTemplate Behavior [ RunTime:0.018220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018349s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000218s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000141s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000072s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000174s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000048s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.019950s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./app/Tpl/Public/head.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [2] file_get_contents(./app/Tpl/Public/footer.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+SQL: SHOW COLUMNS FROM `mygame_server` [ RunTime:0.002656s ]
+SQL: SELECT server.sid AS sid,server.servername AS servername,server.start_time AS start_time,server.server_url AS server_url,server.status AS status,game.gid AS gid,game.sort AS sort,game.gamename AS gamename,game.tag AS tag,game.desc1 AS desc1,game.gamepic AS gamepic,game.game_web AS game_web,game.gametype AS gametype FROM mygame_server server LEFT JOIN mygame_game game ON game.gid=server.gid ORDER BY server.start_time desc  [ RunTime:0.000463s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /Users/peter/svnali/game/public/app/Runtime/Cache/7d976bb99f6a9380ea0f6d319e02c3c0.php 第 47 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.025339s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001865s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000189s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000170s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000039s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.026627s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000114s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.028651s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000398s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000054s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.063044s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004648s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.044968s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000130s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000130s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.048970s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000115s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.049677s ]
+
+[ 2014-08-08T22:34:18+08:00 ] 0.0.0.0 /pay
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000186s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.004947s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+NOTIC: [8] Undefined index: user /Users/peter/svnali/game/public/app/Lib/Action/PayAction.class.php 第 236 行.
+NOTIC: [8] Undefined index: server /Users/peter/svnali/game/public/app/Lib/Action/PayAction.class.php 第 236 行.
+NOTIC: [8] Undefined index: game /Users/peter/svnali/game/public/app/Lib/Action/PayAction.class.php 第 236 行.
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000703s ]
+NOTIC: [8] Undefined index: aid /Users/peter/svnali/game/public/app/Lib/Action/PublicAction.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.002945s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.003422s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000569s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( url = '/pay' )  [ RunTime:0.000255s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000136s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 5 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 6 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 7 行.
+NOTIC: [8] Undefined index: HOST /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 92 行.
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.002191s ]
+SQL: SELECT * FROM `mygame_game`  [ RunTime:0.000260s ]
+INFO: Run ParseTemplate Behavior [ RunTime:0.015721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015809s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000166s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000121s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000066s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000306s ]
+SQL: SELECT `gid`,`smallpic`,`gamename` FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY game_hit desc  [ RunTime:0.000451s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000050s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.018261s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+SQL: SHOW COLUMNS FROM `mygame_pay_type` [ RunTime:0.004657s ]
+SQL: SELECT * FROM `mygame_pay_type` WHERE ( status =1 and isdisplay = 1 ) ORDER BY sort asc  [ RunTime:0.003757s ]
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/3725a6d0dadc22a6801d2431c13a2b54.php 第 23 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/3725a6d0dadc22a6801d2431c13a2b54.php 第 30 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/3725a6d0dadc22a6801d2431c13a2b54.php 第 36 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/3725a6d0dadc22a6801d2431c13a2b54.php 第 41 行.
+SQL: SHOW COLUMNS FROM `mygame_article` [ RunTime:0.003428s ]
+SQL: SELECT * FROM `mygame_article` WHERE ( typeid=10 ) LIMIT 6   [ RunTime:0.000408s ]
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/3725a6d0dadc22a6801d2431c13a2b54.php 第 287 行.
+NOTIC: [8] Undefined variable: userinfo /Users/peter/svnali/game/public/app/Runtime/Cache/3725a6d0dadc22a6801d2431c13a2b54.php 第 288 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.031159s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002672s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000225s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000136s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000028s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033267s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000103s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.034149s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000311s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000048s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.053895s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.003853s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.038349s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000142s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000145s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000034s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.041764s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000119s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.042584s ]
+
+[ 2014-08-08T22:34:27+08:00 ] 0.0.0.0 /service
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000169s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/peter/svnali/game/public/sys/system/Common/functions.php 第 551 行.
+SQL: SHOW COLUMNS FROM `mygame_webconfig` [ RunTime:0.007726s ]
+SQL: SELECT * FROM `mygame_webconfig` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000471s ]
+NOTIC: [8] Undefined index: auth /Users/peter/svnali/game/public/app/Lib/Action/CommonAction.class.php 第 35 行.
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `mygame_category` [ RunTime:0.001743s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.001797s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000523s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: aid /Users/peter/svnali/game/public/app/Lib/Action/PublicAction.class.php 第 44 行.
+SQL: SELECT * FROM `mygame_category` WHERE ( `show` = 0 ) AND ( `ismenu` = 1 )  [ RunTime:0.000352s ]
+SQL: SELECT * FROM `mygame_game` WHERE ( `isdisplay` = 0 ) ORDER BY addtime desc  [ RunTime:0.000374s ]
+SQL: SELECT * FROM `mygame_category` WHERE ( url = '/service' )  [ RunTime:0.000314s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000125s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000209s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: field /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 734 行.
+NOTIC: [8] Undefined index: order /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 736 行.
+NOTIC: [8] Undefined index: where /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 738 行.
+NOTIC: [8] Undefined index: limit /Users/peter/svnali/game/public/sys/system/Lib/Driver/TagLib/TagLibCx.class.php 第 740 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 5 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 6 行.
+NOTIC: [8] Undefined variable: info_a /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 7 行.
+NOTIC: [8] Undefined index: HOST /Users/peter/svnali/game/public/app/Runtime/Cache/9582372d03e8be550b7b93e3eb671ea5.php 第 92 行.
+SQL: SHOW COLUMNS FROM `mygame_game` [ RunTime:0.002186s ]
+SQL: SELECT * FROM `mygame_game`  [ RunTime:0.000377s ]
+INFO: Run ParseTemplate Behavior [ RunTime:0.012732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012871s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000252s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000171s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000081s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000206s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000340s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000043s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.014790s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./app/Tpl/Public/head.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+NOTIC: [2] file_get_contents(./app/Tpl/Public/head.html): failed to open stream: No such file or directory /Users/peter/svnali/game/public/sys/system/Lib/Template/ThinkTemplate.class.php 第 686 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.006485s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002137s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000116s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000124s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007822s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000127s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.008627s ]
+SQL: SELECT * FROM `mygame_webconfig` LIMIT 1   [ RunTime:0.000379s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000048s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.025787s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.002995s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.013182s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000083s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000018s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015346s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 88 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 89 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php:92) /Users/peter/svnali/game/public/sys/system/Lib/Core/View.class.php 第 90 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000061s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.015545s ]
+

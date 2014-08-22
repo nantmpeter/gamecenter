@@ -1,0 +1,71 @@
+@charset "gb2312";
+/* CSS Document */
+#content_3{ width:991px;margin-bottom:20px; padding-bottom:59px; float:left;}
+#fcm_2{ width:971px; padding:4px 9px 0 9px;}
+#fcm_2_left{ width:238px; height:511px; line-height:26px; float:left; border:1px solid #cacaca;background:url(../images/index_39.jpg) no-repeat 9px 38px;}
+#fcm_2_left dt{ width:228px; height:28px; font-size:14px; font-weight:bold; padding-left:8px; border:1px solid #fff; background:#ececec;}
+#fcm_2_left dd{ width:205px; height:34px; line-height:34px; padding-left:32px;font-weight:bold; border-top:1px solid #e1e1e1; }
+#fcm_2_left dd a{ color:#333;}
+#fcm_2_left dd a:hover{ color:#f5990a;}
+
+#fcm_2_right{ width:715px; height:501px; float:right; border:1px solid #e0e0e0; line-height:28px; padding:10px 0 0 10px;}
+#fcm_2_right_1{ width:710px; height:80px;}
+#fcm_2_right_1 dt{ width:82px; height:82px; float:left;}
+#fcm_2_right_1 dd{ width:590px; height:82px; float:left;}
+#fcm_2_right_1 dd span{ color:#ff5a00;}
+
+#fcm_2_right_2{ width:710px; height:400px; float:left; }
+#fcm_2_right_2 dt{ width:710px; height:30px; background:url(../images/index_42.jpg) repeat-x bottom;}
+#fcm_2_right_2 dt a{ width:90px; height:30px; margin-right:12px; float:left; line-height:30px; text-align:center; font-weight:bold; color:#306494; background:url(../images/index_43.jpg) no-repeat}
+#fcm_2_right_2 dt a:hover{ background:url(../images/index_44.jpg) no-repeat;}
+#fcm_2_right_2 dt span a{ background:url(../images/index_44.jpg) no-repeat;}
+#fcm_2_right_2 dd{ width:702px; padding-left:4px;}
+
+div,ul,li{
+margin:0;
+padding:0;
+}
+
+a:link{
+color:#00F;
+text-decoration:none;
+}
+a:visited {
+color: #00F;
+text-decoration:none;
+}
+a:hover {
+color: #c00;
+text-decoration:underline;
+}
+ul{
+list-style:none;
+}.main11{
+clear:both;
+padding:8px; font-size:13px;  height:365px;
+}
+.main11 li{ width:680px; height:26px; line-height:26px; margin-right:12px; float:left; padding-left:12px; background:url(../images/index_4.gif) no-repeat 2px 11px;} 
+#tabs1 {
+  width:710px; height:400px;
+}
+.menu11{
+width:680px;height:30px; 
+}
+.menu11{ padding-left:30px;border-bottom:1px solid #69C;}
+.menu11 li{ background:url(../images/index_43.jpg) no-repeat;
+display:block;
+float: left; height:30px; line-height:30px; 
+width:90px;
+text-align: center; margin-left:15px; display:inline;
+cursor:pointer; color:#F60;font-weight:bold;
+
+}
+.menu11 li.hover{
+background:url(../images/index_44.jpg) no-repeat ;font-weight:bold; height:28px; line-height:28px; margin-top:2px;color: #F60; border-bottom:#FFF 1px solid;
+}
+#main11 ul{
+display: none;
+}
+#main11 ul.block{
+display: block;
+}

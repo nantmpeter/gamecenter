@@ -1,0 +1,48 @@
+select, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	height: 24px;
+}
+
+#menu_global li a,#menu_forum li a,#menu_user li a,#menu_topic li a,#menu_extended li a,#menu_plugin li a,#menu_style li a,#menu_tool li a,#menu_adv li a,#menu_uc li a,#menu_index li a {
+	font: 14px "Microsoft YaHei",Helvetica,Arial,sans-serif;
+}
+
+td > div {
+	color: #aaa;
+	font-size: 11px;
+}
+
+.table td {
+	padding: 5px 0 0px 20px;
+	font: 12px "Microsoft YaHei",Helvetica,Arial,sans-serif;
+	text-shadow: 0 1px 0 white;
+}
+/*.table th, .table td {
+	line-height: 28px;
+}*/
+
+#myTab1 {
+	padding: 0 15px;
+}
+
+#myTab1 li {
+	width: 25%;
+	text-align: center;
+}
+
+#querybox {
+	font: 12px "Courier New", Courier, monospace;
+	color: #999;
+}
+
+.nav {
+	margin-bottom: 3px;
+}
+
+td img#cp3 {
+	margin-top: -11px;
+	margin-left: -20px;
+}
+
+.mt10 {
+	margin-top: -10px;
+}

@@ -1,0 +1,40 @@
+@charset "gb2312";
+/* CSS Document */
+
+#nav li span a{ color:#eb7f16; background:url(../images/index_2.png) no-repeat 12px -23px;}
+#banner_2{ width:734px; height:226px; padding:4px;float:left; background:#fb7c15;}
+#banner_21{ width:442px; height:223px; float:left; padding:4px 0 0 6px; margin-right:12px; background:#fff;}
+#banner_22{ width:256px; height:215px; float:left; padding:12px 0 0 18px; background:#fff;}
+#banner_22 dt{ width:232px; height:49px;}
+#banner_22 dd{ width:197px; height:28px; margin-bottom:8px; line-height:28px; padding-left:34px; background:url(../images/index_2.png) no-repeat -7px -372px;}
+
+#content_1{ width:937px; margin:0 0 20px 28px;}
+#Register{ width:937px; height:48px;}
+#Register dt{ width:19px; height:48px; float:left;}
+#Register dd{ width:899px; height:48px; float:left; line-height:48px; background:url(../images/index_30.jpg) repeat-x;}
+#Register dd img{ margin-top:10px; float:left;}
+#Register dd span{ display:block; float:right;}
+#Register dd span a{ color:#ff4200; text-decoration:underline;}
+
+#Register_1{ width:937px; height:32px;}
+#Register_2{ width:917px; height:470px;  background:url(../images/index_33.jpg) repeat-y;}
+#zc{ width:777px; height:84px; padding-left:160px;}
+#zc li{cursor:pointer; width:162px; height:56px; font-size:14px; display:block; float:left; margin-right:28px; font-weight:bold; color:#fff; line-height:47px; padding-left:20px; background:url(../images/index_2.png) no-repeat -11px -446px; }
+#zc img{ float:left; margin:11px 4px 0 0;}
+
+#zc li:hover{background:url(../images/index_2.png) no-repeat -11px -505px;}
+#zc li.hover{background:url(../images/index_2.png) no-repeat -11px -505px;}
+#zc11{ width:937px; height:595px;}
+#zc11 li{ width:857px; height:50px; padding-left:80px;}
+#zc11 li label{ width:150px;height:40px; line-height:40px; font-size:14px; display:block;font-weight:bold; text-align:right; float:left;}
+#zc11 li input{ width:290px; height:40px; padding-left:10px; display:block; border:1px solid #d1d1d1; float:left; margin-right:6px;}
+#zc11 li span{ height:40px; line-height:40px; float:left; display:block;}
+#zc11 li b img{ margin-top:10px;}
+#zc11 li span input{ width:202px; height:47px;}
+#zc11 li textarea{ width:622px; color:#666; height:147px; font-size:12px; padding:10px; border:1px solid #b9b9b9; margin-left:150px;}
+
+#zc11 ul{
+display: none;
+}
+#zc11 ul.block{
+display: block;

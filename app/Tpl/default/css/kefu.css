@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{background:#f4f9ff;border:1px solid #adc8eb; width:922px; margin:auto;padding:18px; overflow:auto;}
+.banner_t{ width:918px; height:123px; border:1px solid #b5d8ed; background:#fff; margin-bottom:10px; padding:1px;}
+.user_b{width:180px; float:left; position:relative;}
+.user_b li{width:160px; height:34px; line-height:34px; margin-bottom:8px; font-size:13px; font-weight:bold; background:url("../images/stage/b1.jpg") -420px -118px;}
+.user_b li a{ display:block;width:160px; height:34px; text-indent:45px; background-image:url("../images/stage/b2.png"); background-repeat:no-repeat;}
+.user_b li.on{ background:url("../images/stage/b1.jpg") -420px -84px; width:180px;}
+.user_b li a.b1{ background-position:-203px 6px;}
+.user_b li a.b2{ background-position:-203px -24px;}
+.user_b li a.b3{ background-position:-203px -54px;}
+.user_b li a.b4{ background-position:-203px -84px;}
+.user_b li a.b5 {background-position: -203px -122px;}
+
+.user_m{ width:681px; float:left; background:#fff;border:1px solid #cedff5; margin-left:-1px; padding:30px;}
+
+/*常见问题*/
+.step1 dl{ border:1px solid #e0eaf8; margin-bottom:12px;}
+.step1 dt{ line-height:28px; height:28px; border-bottom:1px solid #e0eaf8; padding-left:30px; background:#f8fbff url(../images/stage/i1.png) no-repeat 10px -74px;}
+.step1 dd{ padding:10px; text-indent:20px; background:#eef5fe url("../images/stage/i1.png") no-repeat 10px -107px;}
+
+/*密码投拆*/
+.step3{ background:#fff url("../images/stage/5.jpg") no-repeat right 0;}
+.step3 dl{ margin-bottom:10px;}
+.step3 dt{ background:url("../images/stage/i1.png") no-repeat 0 -520px; line-height:31px; padding-left:35px; font-weight:bold; height:40px;}
+
+.step3 h3{ background:url("../images/stage/i1.png") no-repeat 0 6px; padding-left:17px; border-bottom:1px dotted #9aabc0;}
+.step3 h3 span{ font-weight:normal;}
+.step3 ul{ padding:10px 0 20px 50px;}
+.step3 li{ margin-bottom:6px; clear:both;}
+.step3 li label{ width:100px; display:inline-block; float:left;}
+.step3 li label span{ color:#ec550b;}
+.step3 li .text2{ width:196px; height:48px; border:1px solid #9fb0c5;}
+
+.step3 .text3{width:155px; height:45px; border:none; background:url("../images/stage/b1.jpg") -250px 0; display:block; margin-left:180px;}
+
+/*家长监护*/
+.step4 h3,.step5 h3{ background:url("../images/stage/b1.jpg") -420px 0; width:259px; height:27px; line-height:27px; text-indent:26px; margin-bottom:15px; }
+.step4 .about{ min-height:166px;}
+.step4 .about a.more{ color:#ec550b; text-decoration:underline;}
+.step4 .about a.more:hover{ text-decoration:none;}
+
+.step4 .down{ float:left; width:297px;}
+.step4 .down a.d_btn{ width:224px; height:56px; background:url("../images/stage/b1.jpg") -420px -176px; display:block; overflow:hidden; text-indent:-1000em;}
+.step4 .down strong{ color:#ec550b; }
+.step4 .down p{ background:url("../images/stage/i1.png") no-repeat 0 -193px; padding-left:18px;}
+
+.step4 .fw{float:left; width:414px; background:url("../images/stage/6.jpg") no-repeat right 0; height:220px;margin-right:-30px;}
+.step4 .fw h3{ background:url("../images/stage/b1.jpg") no-repeat -420px -27px; width:222px;}
+.step4 .fw p.i1{ background:url("../images/stage/i1.png") no-repeat 0 -235px; padding-left:23px;}
+.step4 .fw p.i2{ background:url("../images/stage/i1.png") no-repeat 0 -275px; padding-left:23px;}
+.step4 .fw p.i3{ background:url("../images/stage/i1.png") no-repeat 0 -315px; padding-left:23px;}
+
+.step4 .faq{ float:left; width:681px;}
+.step4 .faq p.ask{ font-weight:bold; line-height:30px; padding-left:22px; background:url("../images/stage/i1.png") no-repeat 0 -72px;}
+.step4 .faq p.q{ border-bottom:1px dotted #a5afbb; padding-bottom:5px;padding-left:22px; background:url("../images/stage/i1.png") no-repeat 0 -116px;}
+
+
+/*提示信息样式*/
+.main span.msg{color:orange;margin-left: 10px;}
+
+/*选择游戏*/
+
+#cz_select_game{background:none repeat scroll 0 0 #f4f9ff;border:4px solid #CACACA;left:24px;position:absolute;top:12px;width:448px;z-index:10000;}
+#cz_select_game h3{background:url("../images/stage/newpay_bg08.png") repeat-x scroll 0 0 transparent;height:38px;line-height:38px;padding-left:14px;  color:#fff;}
+#cz_select_game h3 span{float:right;padding-right:10px;padding-top:10px;}
+.cz_sg_nav{background:url("../images/stage/newpay_line01.png") no-repeat scroll center bottom transparent;height:40px;overflow:hidden;width:448px;}
+.cz_sg_nav ul{float:left;left:15px;position:relative;top:10px;}
+.cz_sg_nav ul li{cursor:pointer;display:inline;float:left;height:30px;margin-right:6px;overflow:hidden;}
+.cz_sg_nav ul li a{display:block;font-weight:bold;height:30px;line-height:30px;overflow:hidden;padding-left:1px;text-align:center;width:75px;}
+.cz_sg_nav ul.win_game_nav li a{background:url("../images/stage/newpay_icon10.png") no-repeat scroll 0 0 transparent;}
+.cz_sg_nav ul li:hover a,.cz_sg_nav ul li.on a{background-position:0 -30px;color:#36516f;height:30px;text-decoration:none;width:75px;}
+.cz_sg_seh{float:right;position:relative;right:15px;top:10px;}
+.cz_sg_seh input{height:20px;line-height:20px;vertical-align:middle;}
+#sehbutton{background:url("../images/stage/newpay_icon11.png") no-repeat scroll center center transparent;border:medium none;color:#FFFFFF;font-weight:bold;height:26px;line-height:26px;vertical-align:middle;width:46px;}
+ul.all_game_data{height:112px;}
+ul.lastplay_game_data{height:146px;}
+#cz_select_game #nlist1 ul,#cz_select_game #nlist2 ul{margin:8px 0 0;width:446px;}
+#cz_select_game #nlist1 li,#cz_select_game #nlist2 li{cursor:pointer;display:block;float:left;height:26px;overflow:hidden;position:relative;text-indent:32px;width:111px;}
+#cz_select_game #nlist1 li a:hover,#cz_select_game #nlist2 li a:hover{cursor:pointer;}
+#cz_select_game #nlist1 li span,#cz_select_game #nlist2 li span{display: block;width: 16px;height: 18px;background-image: url(../images/common_top.gif);background-repeat: no-repeat;position: absolute;left: 8px;top: 3px}
+#cz_select_game .pay_page{height:25px;padding-bottom:10px;text-align:center;}
+#cz_select_server .pay_page{height:25px;margin-left:10px;padding-bottom:10px;text-align:center;}
+.pay_page a{border:1px solid #adc8eb;color:#36516f;cursor:pointer;display:inline-block;font-family:Arial;margin:1px;padding:0 4px;vertical-align:middle;}
+.pay_page span.disabled{background-color:#36516f;border:1px solid #36516f;color:#FFFFFF;cursor:pointer;display:inline-block;font-family:Arial;margin:1px 2px 1px 1px;padding:0 4px;vertical-align:middle;}
+
+.last_play_msg_a .gamename_a{color:orange;}

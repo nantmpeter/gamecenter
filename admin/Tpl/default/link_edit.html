@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>31wan - 后台管理中心</title>
+<link href="__PUBLIC__/admin/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/zh-cn-system.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/admin/css/table_form.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles1.css" title="styles1" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles2.css" title="styles2" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles3.css" title="styles3" media="screen">
+<link rel="alternate stylesheet" type="text/css" href="__PUBLIC__/admin/css/style/zh-cn-styles4.css" title="styles4" media="screen">
+<script language="javascript" type="text/javascript" src="__PUBLIC__/admin/js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="__PUBLIC__/admin/js/admin_common.js"></script>
+<script language="javascript" type="text/javascript" src="__PUBLIC__/admin/js/styleswitch.js"></script>
+<script src="__PUBLIC__/js/dialog/plugins/iframeTools.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/calendar/jscal2.css">
+			<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/calendar/border-radius.css">
+			<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/calendar/win2k.css">
+			<script type="text/javascript" src="__PUBLIC__/js/calendar/calendar.js"></script>
+			<script type="text/javascript" src="__PUBLIC__/js/calendar/lang/en.js"></script>
+<script language="javascript" type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	html{_overflow-y:scroll}
+</style>
+<script>
+</script>
+
+<div class="pad-10">
+<div class="col-tab">
+
+<div id="div_setting_1" class="contentList pad-10" style="">
+<form action="{:U('Channel/link_edit')}" method="post" id="myform" enctype="multipart/form-data">
+<table width="100%" class="table_form">
+  <tbody>					
+  <tr>
+    <th width="120">推广链接</th>
+    <td class="y-bg"><input type="text" class="input-text" value="{$info.url}" name="url" id="url" size="30" >&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">每个游戏推广链接</font></td>
+  </tr>
+  <tr>
+    <th width="120">分成比例</th>
+    <td class="y-bg"><input type="text" class="input-text" value="{$info.ratio}" name="ratio" id="ratio" size="10" >&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">每个游戏推广分成比例（例：50）</font></td>
+  </tr>
+  
+    <tr>
+    <th width="120">推广有效时间</th>
+    <td class="y-bg"><input name="starttime" id="starttime" value="{$info.starttime|date='Y-m-d H:i:s',###}" size="20" class="date input-text" readonly="" type="text">&nbsp;<script type="text/javascript">
+			Calendar.setup({
+			weekNumbers: true,
+		    inputField : "starttime",
+		    trigger    : "starttime",
+		    dateFormat: "%Y-%m-%d %H:%M:%S",
+		    showTime: true,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+			});
+        </script> 至  <input name="endtime" id="endtime" value="{$info.endtime|date='Y-m-d H:i:s',###}" size="20" class="date input-text" readonly="" type="text">&nbsp;<script type="text/javascript">
+			Calendar.setup({
+			weekNumbers: true,
+		    inputField : "endtime",
+		    trigger    : "endtime",
+		    dateFormat: "%Y-%m-%d %H:%M:%S",
+		    showTime: true,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+			});
+        </script> &nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">推广结算开始结束时间</font></td>
+  </tr>
+   <tr>
+    <th width="120">审核：</th>
+    <td class="y-bg">
+    <input name="isflag" value="0" type="radio" <eq name="info.isflag" value="0">checked</eq>>是&nbsp;&nbsp;&nbsp;&nbsp;
+	<input name="isflag" value="1" type="radio" <eq name="info.isflag" value="1">checked</eq>> 否
+  &nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">是否审核通过</font></td>
+  </tr>
+  <tr>
+    <th width="120">状态：</th>
+    <td class="y-bg">
+    <input name="status" value="0" type="radio" <eq name="info.status" value="0">checked</eq>>可用&nbsp;&nbsp;&nbsp;&nbsp;
+	<input name="status" value="1" type="radio" <eq name="info.status" value="1">checked</eq>> 关闭
+  &nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">是否可用</font></td>
+  </tr>
+     
+</tbody></table>
+</div>
+
+<div class="bk15"></div>
+<input value="{$id}" name="id" type="hidden">
+<input name="dosubmit" type="submit" value="提交" class="button">
+</form>
+</div>
+
+
+
+</body></html>

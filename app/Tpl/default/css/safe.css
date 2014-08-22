@@ -1,0 +1,110 @@
+/* CSS Document */
+#logined{display:none;}
+#form_mark{background:#FFF;display:block;position:absolute;filter:alpha(opacity=70);-moz-opacity:0.8;opacity: 0.8;z-index:999;}
+#form_mark_content{display:block; position:absolute; font-size:12px; text-align:center; border:2px solid #86cefe; background:#cce4ff;z-index:1000; color:#000; text-align:center; padding:3px;}
+#form_mark_content td{border:1px solid #FFF; background:url("../images/form_mark_content_bg.jpg") repeat-x top #FFF;}
+#full_mark{left:0; top:0;background-color:#fff;opacity: 0.4;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); width:100%;position:absolute; z-index:1499;}
+#reg_iframe{width:630px; height:470px; position:absolute; display:block; top:0; left:0; z-index:1500; background:#FFF; }
+#reg_box_close{position:absolute; display:block;  width:28px; height:28px; cursor:pointer; z-index:1501;}
+
+
+
+#safe_level a,#safe_server a{color:#168B0A;}
+#safe_level .satr,#safe_server .icon{width:17px; height:17px; line-height:130%; padding:0; margin-left:1px; background:url(/images/stage/i2.gif) no-repeat -117px 0; display:inline-block;}
+#safe_level a,#safe_server a{text-decoration: underline; font-size:12px;}
+#safe_level.green .full{background-position:-78px 0;}
+#safe_level.green .half{background-position:-98px 0;}
+#safe_level.yellow .full{background-position:-39px 0;}
+#safe_level.yellow .half{background-position:-58px 0;}
+#safe_level.red .full{background-position:0px 0;}
+#safe_level.red .half{background-position:-19px 0;}
+
+#logined .safe2 #safe_server span{width:16px; height:16px;  margin-right:4px;background-image:url(/images/stage/i2.gif);background-repeat:no-repeat; display:inline-block;}
+#logined .safe2 span.icon_phone{background-position:-3px -49px;}
+#logined .safe2 span.icon_email{background-position:-23px -49px;}
+#logined .safe2 span.icon_qq{background-position:-65px -49px;}
+#logined .safe2 span.icon_ques{background-position:-45px -49px;}
+#logined .safe2 span.icon_phone_on{background-position:-3px -29px;}
+#logined .safe2 span.icon_email_on{background-position:-23px -29px;}
+#logined .safe2 span.icon_qq_on{background-position:-65px -29px;}
+#logined .safe2 span.icon_ques_on{background-position:-45px -29px;}
+
+
+.float_div {position: absolute;width:453px;height:543px;overflow:hidden;display:block;border: 4px solid #5181C1;background: none repeat scroll 0 0 #FFFFFF;z-index:99163; left:50%; margin-left:-227px;}
+.float_title{background: url("../images/stage/c16.png") repeat scroll 0 0 transparent;height: 39px;line-height: 36px;text-indent: 20px;font-size: 14px;font-weight: bold}
+.float_title .close{background: url("../images/stage/c1.png") repeat scroll right -78px transparent;cursor: pointer;height: 36px;position: absolute;right: 0;top: 0;width: 37px;}
+#safe_server .icon{margin-right:3px; position:relative;}
+#safe_server .icon .f_box{position:absolute; z-index:100; width:130px; height:55px;  top:-62px; left:-50px; border:2px solid #86cefe; background:url("/images/form_mark_content_bg.jpg") repeat-x top #FFF; display:none;}
+#safe_server .icon .f_box div{border:1px solid; border:1px solid #FFF;}
+
+
+
+.list_type{border-top:1px solid #ffc467; width: 75px; position: absolute; display: none; z-index: 105;}
+.list_type a{display: block; border: 1px solid #ffc467; border-top: none; background: #fff4d2; padding: 8px 12px; width: 49px; overflow: hidden;}
+.full_mark{width:100%; height: 100%; top: 0; left: 0; position: absolute; background: none; z-index: 100; display: none;}
+
+.inbox_body{font-size: 12px; color: #666; padding: 21px 16px 21px 26px; height: 100%; line-height: 150%; width: 100%;}
+.inbox_body .content{margin-top: 10px;}
+.top_tab div{float:left; display: block; overflow: hidden;}
+.top_tab div.tab .tab_bg{height:20px; line-height: 20px; padding: 4px 0 4px 8px; border: 1px solid #a8e1f3; border-right: none; background:#ddf8ff; color: #666;}
+.top_tab div.on .tab_bg{background:#42bfff; border-color: #42bfff; color: #FFF;}
+.top_tab div.tab .tab_r{background: url("../images/stage/safe_btn.gif") 0 -128px no-repeat;height:30px; width:17px;}
+.top_tab div.on .tab_r{background-position: 0 -161px;}
+
+.inbox_body .desc{ position: absolute; bottom:21px; left: 26px; width: 400px; border-top:1px dashed #b3b3b3; line-height: 200%;}
+.inbox_body .desc h3{color: #F60; line-height: 25px; font-weight:normal; padding: 3px; margin: 0;}
+.inbox_body .desc p{margin:0;}
+.inbox_body .desc a{color:#666; text-decoration: none;}
+.inbox_body .desc a:hover{color: blue; text-decoration: underline;}
+
+.inbox_body .max_height{height: 315px; width: 380px; overflow: auto; color: #666;}
+#tips{display: block; position: absolute; line-height: 100%; width: auto !important;}
+#tips a{padding:4px 10px; width: auto !important;}
+
+.inbox_body form{margin-top:20px; margin-left: 10px; font-size: 14px; line-height: 250%; font-weight: normal;}
+/*input.text{border: 1px solid #7f9db9; background: none; height: 20px; line-height: 20px; padding: 3px 5px; width: 200px}*/
+.centet_btn{display: block; text-align: center; margin: 0 auto; line-height: 150%; margin-top: 15px;}
+.centet_btn .i{ font-size: 14px; color: #f60;}
+.centet_btn div{ margin-top: 15px; margin-bottom: 5px}
+.phone_code_a{ margin-bottom: 10px}
+
+.center_btn_phone{ text-align: left; width: 500px; margin:auto;}
+input.submit{border: none; background: url("../images/stage/safe_btn.gif") 0px -196px no-repeat; width: 112px; height: 34px; line-height: 22px; text-align: center; color: #FFF; font-size: 15px;}
+input.submit:disabled{ background: url("../images/stage/safe_btn.gif") 0px -272px no-repeat;}
+input.submit_red{background-position: 0px -234px;}
+.sub_disabled{ background: url("../images/stage/safe_btn.gif") 0px -272px no-repeat !important;}
+
+
+
+
+/*鎵惧洖瀵嗙爜閮ㄥ垎鏍峰紡*/
+.container .benLoseContainer form label{display: block; margin-top: 10px;}
+.container .benLoseContainer form label span{width: 190px; overflow: hidden; display: inline-block; text-align: right;}
+
+.container .benLoseContainer .step{font-size: 14px; margin-top: 30px; margin-left: 20px;}
+.container .benLoseContainer .select_type{display: block; border-bottom:1px #666 dashed; padding: 10px; margin: 0 50px; height: 55px;}
+.container .benLoseContainer .select_type .title{font-size: 14px; font-weight: bold; padding-top: 15px; height: 40px;}
+.container .benLoseContainer .select_type b{color: #09F; font-size: 14px; margin-top: 5px; display: block;}
+.container .benLoseContainer .select_type a{margin-top: 12px;}
+.container .benLoseContainer .content_text{font-size: 14px;}
+.container .benLoseContainer .top_tab{margin-left:20px;margin-top:20px;}
+
+.settings{margin-top:30px; clear:both;}
+.settings h2{width:652px; font-size:14px; display:block; border:1px solid #32b9fe; height:34px; line-height:34px; color:#FFF; font-weight:bold; text-align:center; background:url(/images/safe_bar.gif) repeat-x 0px 0px;}
+.settings table{border:1px solid #ccdce6; border-top:none;}
+.settings table th{background:url(../images/safe_bar.gif) repeat-x 0px -37px; height:34px; border-bottom:1px solid #acd9ff; line-height:34px; text-align:center;font-size: 14px;color:#0099FF;}
+
+.settings table td{height:55px; border-bottom:1px solid #ccdce6; padding:14px 20px;}
+.settings table td .icon,.select_type .icon{min-width:80px; height:55px; display:block; float:left; padding-left:75px; background:url(/images/safe_icon.gif) no-repeat; font:14px;}
+.icon b{font-size: 14px;}
+.select_type .icon_phone{background-position:0px 0px !important;}
+.select_type .icon_qq{background-position:0px -57px !important;}
+.select_type .icon_email{background-position:0px -114px !important;}
+.select_type .icon_safe{background-position:0px -171px !important;}
+
+.settings table td .icon span{color:#666; font-size:1.0em; font-weight:normal;}
+.settings table td .btn,.select_type .btn{background:url(../images/safe_btn.gif) no-repeat; color:#FFF; width:60px; height:18px; overflow:hidden; display:block; float:right; text-align:center; text-decoration: none}
+.settings table td .btn_red_big,.select_type .btn_red_big{background-position:0px 0px; padding:7px 19px 12px;}
+.settings table td .btn_orange,.select_type .btn_orange{background-position:0px -44px; padding:4px 14px 7px; margin-right:5px;}
+.settings table td .right_text,.select_type .right_text{width:75px; height:18px; overflow:hidden; display:block; float:right; text-align:center; padding:9px 4px; margin-right: 10px;}
+

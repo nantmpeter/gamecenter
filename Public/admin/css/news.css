@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.news-con{ width:991px; margin: 0 auto ; height:auto}
+
+.news-l{ width:224px; float:left; border:solid 1px #ddd; }
+.news-l-con{ padding:15px; width:194px ; padding-bottom:0}
+.news-l-con dl{ width:194px; height:64px; margin-bottom:15px;}
+.news-l-con dl dt{ float:left}
+.news-l-con dl dd{ float:right ; width:90px; text-align:left; line-height:19px;}
+.news-l-con dl dd.text a{ font-weight:bold; color:#ec5307}
+.news-l-con dl dd.text a:hover{color:#ec5307}
+.news-l-con dl dd.con{ color:#999}
+.news-l-con dl dd.but a{width:72px; height:22px; display:block; background:url(../images/Ziye-bj.gif) no-repeat -304px -210px;}
+
+.news-r{ width:753px;border:solid 1px #ddd; float:right;min-height:840px;height:auto!important;height:840px;_height:840px;}
+.news-r .title03{ background:url(../images/con-bj.gif) -20px -269px; height:31px}
+.news-r .title03 ul{ padding:4px 0 0 12px}
+.news-r .title03 ul li{float:left;width:75px;height:27px;font-size:12px;font-weight: normal;line-height:27px;text-align:center; font-weight:bold; margin-right:15px; cursor:pointer}
+.news-r .title03 ul li.hover{width:75px;height:27px; background:url(../images/Ziye-bj.gif) no-repeat -321px 0;display: block;color:#ec5307}
+		 
+.news-r-con{ padding:20px 0 0 25px;}
+.news-r-con li{ height:33px ; line-height:33px; float:left; width:700px; text-align:left; border-bottom:dotted 1px #ddd}
+.news-r-con li a{ float:left}
+.news-r-con li span{ float:right }
+.news-r-con .Flip{text-align:center; border-top: solid 1px #ddd; width:700px;height:33px ; padding:16px 0 20px 0; border-bottom:none; color:#666; margin-top:32px}
+.news-r-con .Flip a{ float:none}
+
+/* ---新闻中心详细页面---*/
+.news-Ind{width:753px;border:solid 1px #ddd; float:right;min-height:840px;height:auto!important;height:840px;_height:840px;}
+.news-Ind .con-top{background:url(../images/con-bj.gif) repeat-x -10px -269px; font-weight:normal; height:31px; line-height:31px; text-align:left; padding-left:20px}
+
+.news-content{ padding:20px; padding-bottom:50px;}
+     .title2{ font-size:26px; text-align:center; margin-top:10px; font-weight:bold;line-height:42px ; border-bottom:1px dotted #ddd; padding-bottom:10px; color:#f15f04}
+	 .title2 p.Det{ font-size:12px ; font-weight:normal; line-height:12px; color:#666}
+	 
+	 .New-Content{  text-align:left; line-height:24px; padding:15px 0 15px 0}
+	 .New-Content p img{ padding:20px 0 20px 0}
+	 
+	 .Flip2{ border-top:1px dotted #ddd; padding:15px 0 15px  0}
+	 .Flip2 p{ line-height:24px; height:24px; text-align:left}
+	 .Flip2 p a:hover{  text-decoration:underline}
+	 
+	 .Return{border-top:1px dotted #ddd; padding:25px 20px 15px  0}
+	 .Return p{ float:right; line-height:20px}
+	 .Return p a:hover{text-decoration:underline}
+	 .Return p img{ padding-left:10px}
+
+/* ---新手卡页面---*/	 
+.New-XSK{ padding:50px 0 0 0}
+.New-XSK li{ height:30px; line-height:30px; width:710px; margin-bottom:15px; float:left; }
+.New-XSK li label{ width:290px; height:30px; display:block; float:left; text-align:right;}
+.New-XSK li select{ width:150px; float:left; height:24px; line-height:24px; margin-top:3px}
+.New-XSK li input{ float:left; width:120px; height:30px;}
+
+.Receive{text-align:center; line-height:200%;}
+.Receive li{ height:32px; line-height:32px; margin-bottom:0}
+	  

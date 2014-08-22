@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$config.SITENAME} - {$type.typename}</title>
+<meta name="keywords" content="{$config.KEYWORDS}">
+<meta name="description" content="{$config.DESCRIPTIONS}">
+<link href="__TMPL__{$config.THEME}/css/games.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="{$config.FAVICON}" />
+</head>
+<body>
+<link href="__TMPL__{$config.THEME}/css/total.css" rel="stylesheet" type="text/css" />
+<div class="header">
+<div class="topban">
+  <div class="ban">
+    <div class="news">
+                    <a href="#" target="_blank" title="三国快，31wan三国快打首服服火爆登场">三国快，31wan三国快打首服服火爆登场</a>
+             
+    </div>
+    <div class="links"><a href="/31wan网页游戏.url">把{$config.SITENAME}网页游戏放到桌面</a> | <a href="#" onClick="setHomepage('http://www.31wan.com/?f=home');return false;">设为首页</a> | <a href="#" onclick="AddFavorite('http://www.31wan.com/?f=fav', '31wan网页游戏');return false;">加入收藏</a></div>
+    <div class="s_games">
+    <a class="tit">网页游戏全目录</a>
+      <div class="g_list">
+        <ul>
+        </ul>
+        <div class="bg"></div>
+      </div><!--g_list-->
+    </div><!--s_games-->
+  </div>
+</div>
+<div class="top">
+  <div class="logo"><a href="/"><img src="{$config.LOGO}" alt="{$config.SITENAME}" width="226" height="66" /></a></div>
+  <div class="banner">
+    <embed class="banner_embed1" menu="" loop="" play="" scale="" quality="high" wmode="transparent" src="http://img.31wan.com/stage/swf/webtop1.swf?v=2" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" height="66" width="680" style="display:none;">
+    <embed class="banner_embed2" menu="" loop="" play="" scale="" quality="high" wmode="transparent" src="http://img.31wan.com/stage/swf/webtop_sgkd.swf?v=2" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" height="66" width="680" style="display:block;">
+  </div>
+</div>
+<div class="nav">
+  <ul>
+<li class="on"><a href="/" target="_self">首  页</a></li>
+    <volist name="category" id="vo">{//获取栏目列表 } 
+    <li class="nor"><a href="<eq name="vo.islink" value="0">/{$vo.typeid|url=lists,###}<else/>{$vo.url}</eq>">{$vo.typename}</a></li>
+    </volist>
+  </ul>
+  <div class="tj"><strong>热门推荐：</strong> <p>
+	<a href="http://txj.31wan.com/" target="_blank" title="天行剑">天行剑</a> | <a href="http://sjsg.31wan.com" target="_blank" title="神将三国">神将三国</a> | <a href="http://cy.31wan.com" target="_blank" title="赤月">赤月</a> | <a href="http://zxy.31wan.com" target="_blank" title="醉西游">醉西游</a> | <a href="http://qsqy.31wan.com" target="_blank" title="倾世情缘">倾世情缘</a> | <a href="http://mhfx.31wan.com/" target="_blank" title="梦幻飞仙">梦幻飞仙</a> | <a href="http://smxj.31wan.com/" target="_blank" title="神魔仙界">神魔仙界</a> | <a href="http://xlfc.31wan.com/" target="_blank" title="仙落凡尘">仙落凡尘</a> | <a href="http://frxz2.31wan.com/" target="_blank" title="凡人修真2">凡人修真2</a> | <a href="http://smzt.31wan.com/" target="_blank" title="神魔遮天">神魔遮天</a> | <a href="http://sgkd.31wan.com/" target="_blank" title="三国快打">三国快打</a> | <a href="http://www.31wan.com/hall.html">更多&gt;&gt;</a> 
+</p></div>
+  <div class="n_l"></div>
+  <div class="n_r"></div>
+</div>
+</div><!--header-->
+<script type="text/javascript">
+    setInterval('showBanner()',15000);
+
+function showBanner(){
+    $(".banner_embed1").toggle();
+    $(".banner_embed2").toggle();
+}
+</script><div class="main">
+  <div class="l">
+    <div class="date time">
+        <h3>最新开服</h3>
+        <div class="date_s time_s">
+            <table cellspacing="0" border="0" id="server_list">
+            <tbody>
+                <tr>
+                <th>游戏</th>
+                <th>时间</th>
+                <th>服务器</th>
+                </tr>
+                 <game name="GameView" order="'server.start_time desc'">
+                <tr>
+                <th><a href="{:U('game/login')}?game={$game.gid}&server={$game.sid}" target="_blank" title="登陆游戏">{$game.gamename}</a></th>
+                <th><a href="{:U('game/login')}?game={$game.gid}&server={$game.sid}" target="_blank" title="登陆游戏">{$game.start_time|date='m/d h:i',###}</a></th>
+                <th><a href="{:U('game/login')}?game={$game.gid}&server={$game.sid}" target="_blank" title="登陆游戏">{$game.servername}</a></th>
+                </tr>
+                </game>
+            </tbody>
+            </table>
+        </div>
+    </div><!--date-->
+    <div class="help">
+        <h3>在线客服</h3>
+        <div class="help_s">
+        <p>游戏客服热线：400-9966-163 
+            <a class="b1" target="_blank" href="/kefu/online.html">游戏客服</a>
+            <a class="b2" target="_blank" href="/kefu/online/pay.html">充值客服</a> 
+        </p>
+        </div>
+    </div><!--help-->
+</div><!--l-->  <div class="news">
+    <h3>{$type}</h3>
+    <div class="bor">
+   
+      <div>
+        <ul class="news_list">
+           <volist name="list" id="vo">
+           <li><span>{$vo.addtime|date='m/d'}</span><h4><a href="{:U('article/read')}?aid={$vo.aid}" title="{$vo.title}"><strong style="color:{$vo.titlecorlor}">{$vo.title}</strong></a></h4></li>
+           </volist>
+        </ul>
+        <div class="pages">{$page}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cl"></div>
+</div>
+<script type="text/javascript" src="__TMPL__{$config.THEME}/js/jquery-1.4.2.js"></script>
+<include file="Public:footer"/>

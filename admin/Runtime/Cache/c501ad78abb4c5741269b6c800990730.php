@@ -1,0 +1,25 @@
+<?php if (!defined('THINK_PATH')) exit();?><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equtv="Content-Type" content="text/html; charset=utf-8" />
+<title>上传备份文件</title>
+<link href="__PUBLIC__/admin/css/Admin_css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+ 
+<table class="admintable"  border="0"  cellspacing="1" cellpadding="3" height="1" width="100%" >
+<tbody>
+<tr>
+<td class="" bgcolor="#eef3f7" style="font-size:16px;" height="35px">上传备份文件</td>
+</tr><tr>
+<td height=30 class="td"><br/><b>注意：</b>上传的备份文件格式为sql,并且内容必须是网页游戏平台管理系统的备份数据!<br/><br/>
+<br/>备份文件命名格式推荐为:	20111210_3774_1.sql;年月日_随机数_卷号.sql
+  <br /><br /><form name=form action="__URL__/doupload" method="post" enctype="multipart/form-data"><div style='text-align:left;'><input type="file" name="url" size="23"  style="width:250px;" onFocus="javascript:this.className='fbform1';" onBlur="javascript:this.className='fbform';">&nbsp;<input type="submit" name="submit" value="上传"></div></form> 
+ <br /><br />
+ <input type="button" onClick="history.go(-1);" class="" value="返 回">
+ <br />
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

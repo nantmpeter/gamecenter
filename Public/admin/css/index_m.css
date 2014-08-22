@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+.banner{width:991px;height:280px; background:#FF6801; margin:0 auto;}/* ---banner开始---*/
+    .login-box{position:relative; float:left}
+    .login{width:245px; height:286px; position:absolute; background:url(../images/banner-bj.gif) no-repeat; z-index:1; left:8px;top:-3px}
+	.login form{width:231px;height:170px; margin:31px 0 0 8px; font-size:13px }
+	.login form li{ width:230px; height:27px; line-height:27px; }
+	.login form li span.st{width:46px; height:27px; display:block; float:left; text-align:right;}
+	.login form li .Per-con{ width:175px; height:27px; float:left; }
+	.login form li .Per-con .Inputbox{background:url(../images/banner-bj.gif) no-repeat -276px 0; border:none; width:168px;height:21px; color:#333;  float:left; padding:6px 0 0 8px ; text-align:left}/* ---输入---*/
+	.login form p{ line-height:20px ; height:20px; text-align:left ;padding-left:50px; color:#FF0000; display:block}
+	
+	.login .Aut-login{ margin:10px 8px 5px 30px; line-height:16px; width:190px}/* ---记住密码---*/
+	.login .Aut-login span{ margin-right:30px}
+	.login .Aut-login a{ color:#E95701}
+	.login .Aut-login a:hover{ text-decoration:underline}
+		
+	.login .inputBtn{float:left;width:99px;height:37px;border:none; background:url(../images/banner-bj.gif) no-repeat -275px -43px;cursor:pointer; }
+	.login .inputBtn2{ float:left; width:102px;height:37px;background:url(../images/banner-bj.gif) no-repeat -380px -43px;margin-left:10px;border:none;cursor:pointer}
+	
+	.other ul{width:241px; height:85px; float:left;background:#666}/* ---其他方式登录---*/
+	
+	
+	.login2{width:245px; height:286px; position:absolute; background:url(../images/banner-bj.gif) -484px 0; z-index:1; left:8px;top:-3px}
+	    .basic2{ width:221px; height:286px; }
+	    .basic2 ul{ padding:15px 0 0 15px; text-align:left; line-height:25px; width:206px; height:212px; }
+	    .basic2 ul li dl{ width:180px; height:55px;}
+	    .basic2 ul li dl dt{ float:left}
+	    .basic2 ul li dl dd{ width:110px; text-align:left; float:right; margin-top:12px; line-height:12px}
+	 
+	    .basic2 ul span{ font-family:Arial; font-size:20px; font-weight:bold ; color:#EB5901}
+	    .basic2 ul li.welcome{ font-size:14px; margin:8px 0 6px 0;}
+	    .basic2 ul li.record{ line-height:24px; color:#888}
+        .basic2 ul li.balance{ margin-top:8px}
+	    .basic2 ul li dd a{ color:#EB5901; text-decoration:underline; width:30px; height:14px ; display:block; float:left; }
+	    .basic2 ul li a{color:#EB5901; text-decoration:underline; }
+		
+		.Played{ color:#fff; text-align:left; padding-left:16px; height:48px; width:220px; padding-top:10px}
+		.Played span{font-weight:bold ;float:left; line-height:20px; color:#ccc}
+		.Played a{ color:#ddd; line-height:20px}
+		.Played a:hover{ text-decoration:underline}
+	
+	.focus{ float:right; width:742px; height:280px; background:#FF6801;position: relative; }/* ---焦点图开始---*/
+	.focus h2{ background:none;}
+	#KinSlideshow{width:742px; height:280px;visibility:hidden; text-overflow:ellipsis;white-space:nowrap;}
+	
+	/* ---banner结束---*/
+
+.content-1{ width:991px;height:275px; margin: 10px auto 0}/* ---第一内容区---*/
+    .newest{width:246px;height:273px; border: 1px  solid #ddd; float:left}/* ---开服---*/
+	 h2{ background:url(../images/con-bj.gif) repeat-x  0 -269px;height:31px; font-size:13px; line-height:31px;text-align:left; padding-left:12px}
+	 h2 span{float:left;} 
+	 h2 a{ float:right ;width:40px; height:30px; display:block; background:url(../images/con-bj.gif) no-repeat 00px 12px;} 
+	 
+	.service-con{ width:226px; padding:10px 10px 0 10px;}
+	.details{ width:207px;height:26px; background:#F6F6F6; border-bottom:1px solid #CCCACA; line-height:26px; text-align:left;padding: 0 5px 0 13px;}
+    .service-con ul li{width:222px;height:23px; background:#F0F0F0;line-height:23px;padding-right:4px; text-align:left; margin-top:9px;}
+	.service-con ul li span.date{ float:left; margin-right:18px;width:70px; background:#EE5800; color:#fff; padding-left:9px; height:23px;}
+	.service-con ul li span.date2{ float:left; margin-right:18px;width:70px; color:#fff; padding-left:9px;background:#9E9E9E; height:23px;}
+	
+	.recommend{width:731px;height:273px; border: 1px  solid #ddd; float:right}/* ---推荐---*/
+	.recommend-con{ width:718px; height:230px; padding:12px 0 0 12px; }
+	.recommend-con ul{background:url(../images/con-bj.gif) no-repeat -481px 0; width:217px; height:211px; padding:12px 5px 0 5px; float:left; margin-right:12px; position:relative}
+	.recommend-con ul .HOT{position:absolute;width:40px;height:42px;background:url(../images/con-bj.gif) no-repeat -944px  -7px; right:-3px; top:-3px;*right:0}
+	.recommend-con ul li.img-box{width:213px; height:73px; border: 1px solid #E7E7E7; margin-bottom:5px;}
+	.recommend-con ul li img{ border:1px solid #fff}
+	
+	.recommend-con ul li.text{text-align:left;line-height:24px;text-indent:5px;height:83px;border-bottom:1px solid #ddd;width:215px; color:#666; padding-top:2px;}
+	.recommend-con ul li.text a{color:#EE5800;} 
+	.recommend-con ul li.text a:hover{color:#EE5800;} 
+	.recommend-con ul li.text span{margin-left:3px}
+	.recommend-con ul li.text a{ font-weight:bold;}
+	
+	.recommend-con ul li ul{ background:none; margin:0; padding:0 ; width:220px; height:30px; margin-top:4px}
+	.recommend-con ul li ul li{ float:left; line-height:35px;}
+	.recommend-con ul li ul li span{ font-size:8px; color:#999; padding: 0 5px;}
+	.recommend-con ul li ul li.but a{ margin:5px 0 0 25px; width:67px; height:23px; display:block; background:url(../images/con-bj.gif) no-repeat -761px -5px;}
+
+.Adve{ width:991px; height:90px; margin:10px auto 0}	
+    .Adve1{ width:490px; height:90px; float:left; background:#666}
+	.Adve2{ width:490px; height:90px; float:right; background:#666}
+	
+.content-2{ width:991px;height:303px; margin: 10px auto 0}/* ---第二内容区---*/	
+    .news{width:246px;height:301px; border: 1px  solid #ddd; float:left}/* ---新闻---*/
+	
+	.news ul{ margin:8px 0 0 10px}
+	.news ul li{ background:url(../images/con-bj.gif) no-repeat 0px -119px; width:206px; height:26px; line-height:26px; text-align:left; padding-left:13px;}
+    
+	.hot{width:731px;height:301px; border: 1px  solid #ddd; float:right}/* ---热门---*/
+	.hot-con{ width:720px; height:258px;padding:12px 0 0 12px;}
+	.hot-con dl{background:url(../images/con-bj.gif) no-repeat -241px 0; width:234px; height:122px; float:left;padding:7px 0 0 5px;}
+	.hot-con dl dt{width:213px; height:79px; border: 1px solid #E7E7E7; float:left; margin-right:10px}
+
+	.hot-con dl dd{ float:left; line-height:25px; margin-top:2px ; width:40px; text-align:left}
+	.hot-con dl dd span{ font-size:8px; color:#999; padding: 0 5px;}
+    .hot-con dl dd.but a{ margin-left:18px;width:67px; height:24px; display:block; background:url(../images/con-bj.gif) no-repeat -764px -54px;}
+	.hot-con1{ width:740px; height:135px;padding:7px 0 0 12px;}
+	.hot-con1 dl{background:url(../images/con-bj.gif) no-repeat -241px 0; width:234px; height:125px; float:left;padding:7px 0 0 5px; margin-left:7px; }
+	.hot-con1 dl dt{width:213px; height:79px; border: 1px solid #E7E7E7; float:left; margin-right:10px}
+.hot-con1 dl dt img{width:213px; height:79px;}
+	.hot-con1 dl dd{ float:left; line-height:25px; margin-top:2px ; width:40px; text-align:left}
+	.hot-con1 dl dd span{ font-size:8px; color:#999; padding: 0 5px;}
+    .hot-con1 dl dd.but a{ margin-left:18px;width:67px; height:24px; display:block; background:url(../images/con-bj.gif) no-repeat -764px -54px;}
+	
+.content-3{ width:991px;height:223px; margin: 10px auto 0}/* ---第三内容区---*/	
+    .forum{width:246px;height:221px; border: 1px  solid #ddd; float:left}/* ---论坛---*/
+	.forum ul{ padding-top:10px;}
+	.forum ul li{ text-align:left; line-height:24px; margin-left:12px;}
+
+	.raiders{width:372px;height:221px; border: 1px  solid #ddd; float:left; margin-left:10px;}/* ---攻略---*/
+	    .con-list ul{ margin:10px}
+	    .con-list ul li{background:url(../images/con-bj.gif) no-repeat 0 -158px; height:24px; text-align:left; float:left; line-height:24px; padding-left:12px; width:340px}
+	    .con-list ul li a{ float:left}
+	    .con-list ul li span{ float:right ; color:#666} 
+			
+	.mood{width:348px;height:221px; border: 1px  solid #ddd; float:right}
+	.mood .con-list ul li{ width:315px;}
+
+.beauty{width:989px;height:354px; border: 1px  solid #ddd;margin: 10px auto 0 }/* ---美女图片---*/
+    .beauty-list{ padding:20px 0  0 20px; line-height:16px}
+    .beauty-list li{ background:url(../images/con-bj.gif) no-repeat -56px 0; width:133px; height:150px; float:left; padding-right:28px;}
+	.beauty-list li img{ padding:6px; padding-bottom:10px;}
+
+.classic{width:989px;height:222px; border: 1px  solid #ddd;margin: 10px auto 0}/* ---经典小游戏---*/
+    .classic-list{ padding:20px 10px 0; width:969px; height:177px}
+    .classic-list li{ float:left;width:74px; height:81; line-height:20px; padding-bottom:10px;}
+	.classic-list img{ margin:0 11px}
+
+
+.links{width:989px;height:128px; border: 1px  solid #ddd;margin: 10px auto 0}/* ---友情链接---*/
+    .website{ line-height:25px; text-align:left; padding:10px 16px; color:#666}

@@ -1,0 +1,38 @@
+@charset "gb2312";
+/* CSS Document */
+#content_1{ width:968px; height:697px; margin:0 0 20px 12px;}
+#Mode{ width:210px; height:697px; float:left;}
+#Mode dt{ width:193px; height:36px; border:1px solid #b4c9e8; line-height:36px; font-weight:bold; font-size:14px; color:#315c9c; padding-left:15px; background:url(../images/index_35.jpg) repeat-x;}
+#Mode dd{ width:208px; height:638px;border:1px solid #b4c9e8; border-top:none;}
+#Mode dd li{ width:208px; height:45px;}
+#Mode dd li a{ width:190px; height:45px;padding-left:18px;line-height:48px; display:block;}
+#Mode dd li img{ margin:11px 8px 0 0; float:left;}
+#Mode dd li a:hover{ color:#fff; font-weight:bold; background:url(../images/index_2.png) no-repeat -11px -568px;}
+
+#Mode2{ width:192px; height:697px; float:right;}
+#Mode2_1{ width:188px; height:73px; border:1px solid #cbcbcb; padding:1px; margin-bottom:8px;}
+#Mode2_2{ width:190px; height:590px; border:1px solid #cbcbcb;}
+#Mode2_2 dt{ width:182px; height:33px; line-height:33px; border-bottom:1px solid #ccc; padding-left:8px; background:url(../images/index_24.png) repeat-x;}
+#Mode2_2 dt img{ float:left; margin:7px 5px 0 0;}
+#Mode2_2 dd{ width:154px; height:30px; padding-left:20px; margin-left:6px; border-bottom:1px dashed #cbcbcb; line-height:30px; background:url(../images/index_4.gif) no-repeat 10px 12px;}
+
+#Mode2_2 dd a:hover{ color:#eea400;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

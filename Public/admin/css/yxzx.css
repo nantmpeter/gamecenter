@@ -1,0 +1,86 @@
+@charset "gb2312";
+/* CSS Document */
+
+#nav li span a{ color:#eb7f16; background:url(../images/index_2.png) no-repeat 12px -23px;}
+#banner_2{ width:734px; height:226px; padding:4px;float:left; background:#fb7c15;}
+#banner_21{ width:442px; height:223px; float:left; padding:4px 0 0 6px; margin-right:12px; background:#fff;}
+#banner_22{ width:256px; height:215px; float:left; padding:12px 0 0 18px; background:#fff;}
+#banner_22 dt{ width:232px; height:49px;}
+#banner_22 dd{ width:197px; height:28px; margin-bottom:8px; line-height:28px; padding-left:34px; background:url(../images/index_2.png) no-repeat -7px -372px;}
+
+#content_1{ width:991px; height:234px; margin-bottom:8px;}
+
+
+#content_3{ width:991px; float:left; margin-bottom:20px;}
+#content_3_right{ width:742px; float:left;}
+#right_1{ width:728px; height:30px; line-height:30px;border:1px solid #cacaca; border-bottom:none;font-weight:bold; padding-left:12px;background:url(../images/index_2.gif) repeat-x;}
+#right_2{ width:726px; height:425px; border:1px solid #e0e0e0; border-top:none; padding:14px 0 0 14px;}
+#right_2 dt{ width:210px; height:38px; margin:0 38px 10px 0; border:1px solid #fcd93e; float:left; line-height:38px; background:url(../images/index_2.png) no-repeat -5px -406px;}
+#right_2 dt span{ width:96px; height:38px; margin-left:45px; color:#7abf02; float:left;}
+#right_2 dt b{ height:38px; display:block; color:#ff0101; font-weight:100;}
+#right_2 strong dt{ margin-right:0; font-weight:100;}
+
+
+
+#content_3_left{ width:240px; float:left; margin-right:8px;}
+#Top{ width:238px; height:470px; border:1px solid #e0e0e0; margin-bottom:8px;}
+#Top dl{ width:238px; height:460px; background:url(../images/index_2.png) no-repeat -305px -189px;}
+#Top dt{ width:218px; height:30px; font-size:14px; color:#333; padding:0 8px 0 10px; font-weight:bold; line-height:30px; border:1px solid #fff; border-bottom:none; background:url(../images/index_2.gif) repeat-x;}
+#Top dt a{ width:37px; height:6px; display:block; margin-top:12px; float:right;background:url(../images/index_2.png) no-repeat -254px -201px;}
+#Top dt span{ float:left;}
+#Top dd{ width:190px; height:32px; line-height:32px; border-bottom:1px dashed #cbd5fa; padding-left:28px; margin-left:10px;}
+#Top dd span a{ color:#f06500; font-size:14px; font-weight:bold;}
+
+
+div,ul,li{
+margin:0;
+padding:0;
+}
+
+a:link{
+color:#00F;
+text-decoration:none;
+}
+a:visited {
+color: #00F;
+text-decoration:none;
+}
+a:hover {
+color: #c00;
+text-decoration:underline;
+}
+ul{
+list-style:none;
+}
+.main11{
+clear:both;
+ font-size:13px;width:740px; height:425px;  border-top:none; 
+}.main11 ul{padding:14px 0px 0px 14px; display: inline-block}
+.main11 li{ float:left;width:210px; height:38px; margin:0 30px 10px 0; border:1px solid #fcd93e; float:left; line-height:38px; background:url(../images/index_2.png) no-repeat -5px -406px; display:inline;} 
+.main11 li span{ width:96px; height:38px; margin-left:45px; color:#7abf02; float:left;}
+.main11 li b{ height:38px; display:block; color:#ff0101; font-weight:100;}
+#tabs1 {
+ width:740px; border:1px solid #ebebeb;
+}
+.menu11{
+ width:730px;height:30px; background:url(../images/index_2.gif);
+}
+.menu11{ padding-left:10px; font-size:12px}
+.menu11 li{
+display:block;
+float: left; height:30px; line-height:30px; 
+width:90px;
+text-align: center;
+cursor:pointer; color:#666;font-weight:bold;
+
+}
+.menu11 li.hover{
+background: #666;font-weight:bold; height:28px; line-height:28px; margin-top:1px; color: #fff;
+}
+#main11 ul{
+display: none;
+}
+#main11 ul.block{
+display: block;
+}
+

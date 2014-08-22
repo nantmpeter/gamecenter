@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0}
+
+a{ color:#456795; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+
+ul,li{list-style:none;}
+.conmian{ font-size:12px; background:#fff; font-family:"宋体"; line-height:20px;}
+.reg{ width:574px; height:479px; margin:auto; background:url(../images/reg/box.png); color:#456795; padding:24px 28px 0; position:relative;}
+.reg ul{width:574px;}
+.reg li{line-height:24px;  height:33px;}
+.reg li label{ width: 76px; display:inline-block; text-align:right;}
+.reg li span{ color:#a2b0c3; display:inline-block; }
+.reg li b{ color:#f60; font-weight:normal; margin:0 4px;}
+.reg li.ok{ height:48px; margin-top:8px;  padding-top:10px;margin-bottom: 10px;}
+.reg li span.msgB{ padding-left:22px; background:url(../images/reg/paytishi.png) no-repeat 0 -68px;}
+.reg li span.msgA{ padding-left:22px; background:url(../images/reg/paytishi.png) no-repeat 0 -26px;}
+
+.verify{margin-top: 3px;position: absolute;}
+.reg .st1{ background:url(../images/reg/st1.png) no-repeat 0 0; height:48px; padding-left:124px; line-height:42px; color:#717171;}
+.reg .st1 span{ color:#fe5d0e;}
+.reg .st2{ background:url(../images/reg/st2.png) no-repeat 0 0; height:38px; padding-left:200px; line-height:42px; color:#717171; margin-top:8px;}
+.reg .st2 span{ color:#fe5d0e;}
+.reg .about{ color:#7a8fac; line-height:18px; padding:0 15px; height:50px;}
+.reg .about span{ color:#4fab40;}
+.reg .r_btn{ width:143px; height:48px; border:0; background:url(../images/reg/r_btn.png); cursor:pointer; margin:auto; display:block;}
+
+.reg .txt{ width:164px; height:24px; border:1px solid #87afcb; line-height:24px; text-indent:3px; font-size:12px;color:#456795;}
+.reg .txt_v{ width:85px; height:24px; border:1px solid #87afcb; line-height:24px; text-indent:3px; font-size:12px;color:#456795;}
+.reg .yes{border-top:1px dotted #b8b8b8; padding-left:15px;padding-top:7px;}
+.reg .close{ position:absolute; top:0; right:0; width:28px; height:28px; overflow:hidden; text-indent:-1000em; }
+
+.reg .check{ height:18px; overflow:hidden; margin-left:82px; margin-top:-2px;}
+.check div{width:89px; height:12px; background-image:url(../images/reg/Strength.png);}
+.check div.Strength{ background-position:0 0; }
+.check div.Strength1{ background-position:0 -12px;}
+.check div.Strength2{ background-position:0 -24px;}
+.check div.Strength3{ background-position:0 -36px;}
+
+.submit_btn{background: url("../images/reg/r_btn.png") repeat scroll 0 0 transparent;border: 0 none;cursor: pointer;display: block;height: 48px;margin-left: 80px;width: 143px;cursor:pointer}

@@ -1,0 +1,27 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+
+#content_3{ width:991px; float:left; margin-bottom:20px;}
+#content_3_right{ width:742px; float:left;}
+#right_1{ width:740px; height:70px; line-height:30px;border:1px solid #e0e0e0; border-bottom:none;}
+#right_2{ width:736px;height:auto !important;£¨Õë¶ÔIE7 IE78 »ðºü£© height:520px; _height:520px; min-height:520px;border:1px solid #e0e0e0; border-top:none; padding:4px 0 0 4px;}
+#right_2 li{ width:712px; line-height:26px; border-bottom:1px dashed #ccc; float:left;}
+#right_2 li a{ margin-left:4px; float:left;}
+#right_2 li span{ float:right; margin-right:4px;}
+.xzyx{ width:370px; height:60px; float:left; margin:10px 0 0px 12px;   background:url(../images/1.jpg) no-repeat; padding-left:30px; color:#fff; font-size:26px; line-height:60px; font-family:"Î¢ÈíÑÅºÚ"; font-weight:bold;vertical-align:middle;}
+.xzyx1{ width:135px; vertical-align:middle; }
+
+#content_3_left{ width:240px; float: right; margin-left:8px;}
+#Top{ width:238px; height:470px; border:1px solid #e0e0e0; margin-bottom:8px;}
+#Top dl{ width:238px; height:460px; background:url(../images/index_2.png) no-repeat -305px -189px;}
+#Top dt{ width:218px; height:30px; font-size:14px; color:#333; padding:0 8px 0 10px; font-weight:bold; line-height:30px; border:1px solid #fff; border-bottom:none; background:url(../images/index_2.gif) repeat-x;}
+#Top dt a{ width:37px; height:6px; display:block; margin-top:12px; float:right;background:url(../images/index_2.png) no-repeat -254px -201px;}
+#Top dt span{ float:left;}
+#Top dd{ width:190px; height:32px; line-height:32px; border-bottom:1px dashed #cbd5fa; padding-left:28px; margin-left:10px;}
+#Top dd span a{ color:#f06500; font-size:14px; font-weight:bold;}
+
+
+.page{ display:block; float:left; width:400px; height:25px; line-height:25px; padding-left:5px;}
+
